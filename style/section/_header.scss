@@ -1,0 +1,163 @@
+/* Header Section of Infogra.ph */
+
+header {
+	position: relative;
+	max-height: 50px;
+	width: 100%;
+	top: 0;
+	display: block;
+	max-width: none; 
+	z-index: 1000;
+	white-space: nowrap;
+
+	&.on{
+		max-height: 1000px;
+	}
+
+	#banner { 
+		position: absolute; 
+		// background: $darkbackblueopaque;
+		padding-left: 0; 
+		padding-right: 0; 
+		// @include row(); 
+		width: 100%;
+		max-width: 1080px;
+		height: 45px;
+		left:0;
+		right: 0;
+	}
+
+	// Menu Button
+	.menu-button {
+		position: absolute;
+		width: 35px;
+		height: 25px;
+		line-height: 1.5em;
+		margin: auto;
+		top: 5px;
+		left: 15px;
+		bottom: 0;
+		cursor: pointer;
+		&:before {
+			content: $menu;
+			font-family: "FontAwesome";
+			font-size: 30px; 
+			margin-right: .5em; 
+			color: white;
+			display: inline-block;
+			vertical-align: middle;
+			width: 30px;
+			height: 20px;
+			top: 0;
+			bottom: 0;
+			left: 0; 
+			right: 0;
+		}		
+
+		@include respond("min-width:1120px"){
+			position: absolute;
+		}
+	}
+
+	// Logo 
+	.logo {
+		// @include fancytiles(4, 4, 4);
+		padding: 5px 0;
+		width: 400px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 50px;
+
+		@media screen and ( max-width: 770px ){
+			width: 100px;
+		}
+
+		& > * {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.large-logo{
+			@include hidden(all-tablets);
+			@include hidden(all-phones);
+		}
+		.small-logo{
+			@include hidden(desktop);
+		}	
+		.tagline {
+			@include maintext;
+			color: $coral;
+			font-size: 16px;
+			margin-left: 10px;
+			font-style: italic;
+			display: block;
+			margin-top: 5px;
+			white-space: normal;
+			text-transform: initial;
+			@media screen and ( max-width: 770px ){
+				width: 60vw;
+				margin-top: 0;
+				line-height: 1em;
+				display: inline-block;
+				vertical-align: middle;
+				display: none;
+			}
+		}	
+	}
+
+
+	// share menu
+	.sharing {
+		// @include fancytiles(4,2,2);
+		text-align: left;
+		float: right;
+		width: 120px;
+
+		li {
+			display: inline-flex;
+			vertical-align: top;
+		}
+
+		.follow-us {
+			@include h4;
+			margin-right: 1em;
+			padding: 10px 0;
+		}
+
+		.social {
+			width: 45px;
+			height: 45px;
+			margin-left: -4px;
+			background-color: #eee;
+			transition: height .5s ease-in-out;
+			position: relative;
+			&:hover{
+				height: 100px;
+			}
+			a::before {
+				color: white;
+				display: block;
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 12px;
+				font-size: 30px;
+				text-align: center; 
+			}
+			&.facebook {
+				background: #3b5998;
+				a::before{
+					content: $facebook;
+					font-family: "FontAwesome";
+				}
+			}
+			&.twitter {
+				background: #00aced;
+				a::before{
+					content: $twitter;
+					font-family: "FontAwesome";
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+<ol class="sources">
+	<h4>source</h4>
+	{% for source in p.get_field('sources') %}
+		<li><a href="{{ source.link }}">{{ source.caption }}</a></li>
+	{% endfor %}
+</ol>

@@ -1,0 +1,166 @@
+/* Styles for infographic section of infogra.ph */
+	
+@mixin flip {
+	.card {
+		float: left;
+		width: 50vw;
+		height: 31.3vw;
+		position: relative;
+		font-size: .8em;
+
+		-webkit-perspective: 600px;
+		-moz-perspective: 600px;
+		perspective: 600px;
+	}
+	/* -- make sure to declare a default for every property that you want animated -- */
+	/* -- general styles, including Y axis rotation -- */
+	.card .front {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 900;
+		width: inherit;
+		height: inherit;
+		background: #6b7077;
+		text-align: center;
+
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		-moz-transform: rotateX(0deg) rotateY(0deg);
+		transform: rotateX(0deg) rotateY(0deg);
+
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+	}
+	.card.flip .front {
+		z-index: 900;
+		background: #333;
+		box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+	.card .back {
+		float: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 800;
+		width: inherit;
+		height: inherit;
+
+		-webkit-transform: rotateY(-180deg);
+		-moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		transform: rotateY(-179deg);
+
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+	}
+
+	.card.flip .back {
+		z-index: 1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		-moz-transform: rotateX(0deg) rotateY(0deg);
+		transform: rotateX(0deg) rotateY(0deg);
+	}	
+
+	.game {
+		position: absolute;
+		right: 3vw;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 50%;
+	}
+}
+
+#infographic {
+	z-index: -1;
+	
+	.feature-image {
+		opacity: .1;
+		transition: opacity 1s ease-in;
+		img{
+			vertical-align: top;
+		}
+	}
+	&.open .feature-image {
+		opacity: 1;
+	}
+
+	.tiles{
+		max-height: 0;
+		transition: max-height 1s ease-in;
+		overflow: hidden;
+		li.tile-container {
+			display: inline-block;
+			width: 50%; 
+
+			.front, .back{
+				&::after{
+					content: "";
+					position: absolute;
+					width:0;
+					height: 0;
+					// border-bottom: 30px solid #000;
+					// border-left: 30px solid transparent;
+					bottom: 0;
+					right: 0;
+					transition: all .5s;
+				}
+				&:hover::after{
+					border-width: 0 0 30px 30px;
+					border-style: solid;
+					border-color: #fff;
+					box-shadow: 1px 1px;	
+				}
+				&[corner-color="black"]{
+					&::after { border-left-color: #161e20 };
+				}
+				&[corner-color="blue"]{
+					&::after { border-left-color: #9cc9cc };
+				}
+				&[corner-color="darkblue"]{
+					&::after { border-left-color: #538794 };
+				}
+				&[corner-color="yellow"]{
+					&::after { border-left-color: #ecec2a };
+				}
+				&[corner-color="white"]{
+					&::after { border-left-color: #ffffff };
+				}
+
+			}
+			.front {
+			}
+		}
+
+		@include flip;
+		
+	}
+	&.open .tiles{
+		max-height: 100vw;
+	}
+}
+
+

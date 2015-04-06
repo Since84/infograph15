@@ -1,0 +1,123 @@
+/* infogra.ph footer */
+
+footer {
+	background: $darkbackblue;
+	padding: 0 20px 20px;
+
+	h2 {
+		@include h2;
+		color: white;
+		margin-bottom: .25em;
+	}
+
+	a{
+		color: $lightblue;
+		text-decoration: none;
+		margin-left: 1em;
+		display: inline-block;
+		font-family: "Helvetica", sans-serif;
+	}
+	.container { 
+	
+		& > span {
+			@include maintext;
+			font-style: italic;
+			color: white;
+			margin-bottom: .5em;
+		}
+	}
+	.contact-copyright {
+		@include maintext;
+		font-family: "Helvetica", sans-serif;
+	}
+	.contact {
+		color: #00dce7;
+		text-decoration: none;
+		@include maintext;
+		font-family: "Helvetica", sans-serif;
+		&::before{
+			content: $envelope;
+			color: #00dce7;
+			margin-right: .5em;
+			font-family: "FontAwesome";
+		}
+	}
+	.copyright {
+		color: $darktextblue;
+		@include maintext;
+		font-family: "Helvetica", sans-serif;
+	}
+
+	.elefint-mark {
+		float: right;
+		white-space: nowrap;
+		max-width: 30px;
+		overflow: hidden;
+		transition: 1s max-width;
+		@include sparkheader;
+		font-size: 14px;
+		&:hover {
+			max-width: 1000;
+		}
+		svg{
+			width: 30px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5px;
+			.logomark {
+				fill: white;
+			}
+		}
+		&:hover{
+			max-width: 1000px;
+		}
+	}
+
+	//Form
+	#mc_embed_signup {
+		margin-top: 1em;
+		.mc-field-group {
+			display: inline-block;
+			margin-right: 1em;
+			width: 22%;
+			input {
+				width: 100%;
+				background: none;
+				border: 2px solid $darktextblue;
+				padding: 10px;
+				color: $darktextblue;
+				border-radius: 2px;
+				&:focus {
+					border-color: $coral;
+					outline: none;
+					color: white;
+				}
+				&::-webkit-input-placeholder { /* WebKit browsers */
+				    color:    $darktextblue;
+				}
+				&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+				   color:    $darktextblue;
+				   opacity:  1;
+				}
+				&::-moz-placeholder { /* Mozilla Firefox 19+ */
+				   color:    $darktextblue;
+				   opacity:  1;
+				}
+				&:-ms-input-placeholder { /* Internet Explorer 10+ */
+				   color:    $darktextblue;
+				}
+			}
+		}
+		input[type="submit"]{
+			@include h2;
+			font-size: 16px; 
+			display: inline-block;
+			background: $coral;
+			border-radius: 2px;
+			padding: 10px 30px;
+			border: none;
+			color: white; 
+		}
+	}
+
+}

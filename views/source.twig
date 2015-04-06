@@ -1,0 +1,15 @@
+<div class="source">
+    <div class="author">
+        <div class="authorphoto">
+            <img    src="   {% if source.quotee_pic %}{{ source.quotee_pic.url }}
+                            {% else %} {{ bloginfo('stylesheet_directory') }}/images/contributor1.jpg
+                            {% endif %}"
+                    alt="">
+        </div>
+        <a class="readmore"><span></span></a>
+    </div>
+    <div class="opinion-meta">
+        <h3>{{ source.quotee_name }}</h3>
+        <h4>{{ source.quotee_title }}</h4>
+    </div>
+</div>

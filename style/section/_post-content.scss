@@ -1,0 +1,311 @@
+/* Post Content Styles for infogra.ph */
+.main {
+	position: relative;
+	z-index: 10;
+}
+#article {
+	z-index: 10;
+	overflow: visible;
+	@include row();
+
+	p {
+		margin-bottom: 1.5em;
+	}
+	a:link {
+		color: $coral;
+		text-decoration: none;
+	}
+	a:visited{
+		color: #d95650;
+	}
+
+	li {
+		padding-left: 1em;
+		margin-left: 1em;
+		margin-bottom: 1.5em;
+		&::before{
+			content: "•";
+			position: absolute;
+			color: $coral;
+			font-size: 18px;
+			left: 2em; 
+		}
+	}
+	ul, ol { padding: 5px 2em; }
+
+	ol {
+		padding-left: 0;
+		counter-reset: item;
+		position: relative;
+		li {
+			padding-left: .5em;
+			&::before{
+				content: counter(item) ". ";
+				counter-increment: item;
+				color: $text;
+				left: 0;
+				font-size: 14px;
+			}
+		}
+	}
+
+	//Preview Paragraph with "View Infographic" button
+	.post-preview {
+		transition: all 1s ease-in;
+		transition-delay: .5s;
+		color: white;
+		width: 100%;
+		margin-left: 0;
+		// @include column(12);
+		
+		p {
+			font-size: 18px;
+			color: white;
+			margin-top: 1em;
+			transition: all 1s ease-in;
+			transition-delay: .5s;
+		}
+
+		h2, h3 {
+			transition: all 1s ease-in;
+			transition-delay: .5s;
+		}
+
+		.post-date {
+			@include h2;
+			font-size: 12px;
+			padding: 5px 10px;
+			border: 2px solid white;
+			border-radius: 3px;
+			margin-bottom: 1em;
+			display: inline-block;
+			clear:both;
+			color: white;
+
+		}
+
+		.post-title {
+			font-family: "Bebas-neue";
+			font-size: 50px;
+			margin-bottom: .25em;
+			padding: 5px 0;
+			transition: all 1s ease-in;
+			transition-delay: .5s;
+			line-height: 1em;
+		}
+
+		.toggle-infographic {
+			@include h2;  
+			font-size: 20px;
+			display: inline-block;
+			background: $coral;
+			border-radius: 4px; 
+			padding: 10px 20px;
+			margin-top: 1em;
+			cursor: pointer;
+			&:before {
+				content: $search;
+				font-family: "FontAwesome";
+				margin-right: .5em; 
+				color: white;
+			}
+			&::after {
+				content: "View Infographic";
+				font-family: "Helvetica";
+				font-size: 20px;
+				color: white;
+			}
+			&:hover{
+				background-color: #ee5246;
+			}
+		}
+
+		@include respond("min-width: 860px"){
+			margin-top: -350px;
+			margin-bottom: 150px;
+		}
+		@include respond("max-width: 860px"){
+			margin-top: 40px;
+			p { color: $text; }
+			.post-date { 
+				border-color: $darkbackblue;
+				color: $darkbackblue; 
+			}	
+			//Article Styles
+			h2{ color: $darkbackblue;  }
+			h3{ color: $coral; }
+			.toggle-infographic {
+				position: absolute;
+				top: -120px;
+			}
+		}
+
+	}
+	&:not(.open) .post-preview { color: white; }
+	&.open {
+		.post-preview {
+			margin-top: 2em;
+			margin-bottom: 0;	
+			p { color: $text; }
+			.post-date { 
+				border-color: $darkbackblue;
+				color: $darkbackblue; 
+			}	
+			.toggle-infographic {  
+				position: absolute;
+				top: 0px;
+				right: 0;
+				z-index: 100;
+				margin-top: 0;
+				border-radius: 0 0 4px 4px;
+				padding: 5px 10px;
+				transition: .25s all ease-in-out 1s;
+				&::before, &::after {
+					display: block;
+					width: auto;
+					margin: 0;
+					text-align: center;
+					color: white;
+				}
+				&::before {
+					content: $uparrow;
+				}
+				&::after {
+					content: "Close";
+					font-family: "Helvetica";
+					font-size: 18px;
+				}
+			}
+		}
+
+		//Article Styles
+		h2{ color: $darkbackblue;  }
+		h3{ color: $coral; }
+	}
+
+	.post-content {
+		@include column(6);
+		margin-left: 0;
+	}
+	#recommended-articles {
+		@include column(5); 
+		max-width: 290px;
+		float: right;
+		@include respond("max-width:770px"){
+			margin-top: 40px;
+			max-width: none;
+			width: 100%;
+		}
+
+		&.sticky{
+			position: fixed;
+			top: 80px;
+			right: 45px;
+
+			p {
+				max-height: 0;
+				overflow: hidden;
+			}
+			&.sticky-bottom {
+				position: absolute;
+				bottom: 40px;
+				display: block;
+			}
+		}
+
+		h4 {
+			margin-bottom: 1em;
+			font-size: 30px;
+			font-family: "Bebas-neue", sans-serif;
+			color: #3b535d;
+		}
+
+		.recommended { 
+		    align-items: flex-start;
+		    display: inline-flex;
+		    line-height: 1.25em;
+		    margin: 0 0 25px;
+		    padding-bottom: 1em;
+		    position: relative;
+		    border-bottom: 1px solid $lightgray;
+		    position: relative;
+
+		    &:last-child{
+		    	border: none;
+		    }
+
+			a {
+			    position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			}
+			img {
+			    float: left;
+			    height: auto;
+			    min-width: 32%;
+			    max-width: 32%;
+			    margin: 0 5% 0 0;
+			    width: 32%;
+			    border-radius: 50%;
+			}
+
+			.source {
+				@include sparkheader;
+				padding: 5px;
+				border-radius: 5px;
+				text-transform: none;
+				display: inline-block;
+				margin-bottom: .5em;
+				color: $darkbackblue;
+				border: 2px solid $darkbackblue;
+				transition: .25s all ease-in-out;
+			}
+			&:hover .source{
+				background: $coral;
+				border-color: $coral;
+				color: white;
+			}
+
+
+		}
+
+		.post-title {
+			@include h4;
+			margin-bottom: .25em;
+		}
+
+		p {
+			@include maintext;
+			transition: all .25s linear;
+		}
+
+		img {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+
+	.sources {
+		margin-top: 1em;
+		padding: 0;
+		* { color: #708d99; }
+
+		h4{
+			@include h4; 
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		a { 
+			color: #21a5b9;
+		}
+
+		li{
+			margin-bottom: 5px;
+		}
+	}
+
+}  
+

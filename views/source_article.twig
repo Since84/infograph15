@@ -1,0 +1,27 @@
+<article>
+    <h2>{{ article.article_title }}</h2>
+    <p>
+        {{ article.article }}
+    </p>
+    {% if article.quotee_bio %}
+    <aside class="bio">
+        <div class="authorphoto">
+            <img src="{% if article.quotee_pic %}{{ article.quotee_pic.url }}
+                        {% else %} {{ bloginfo('stylesheet_directory') }}/images/contributor1.jpg
+                        {% endif %}">
+        </div>
+
+        <div class="detail">
+            <h3>About Contributor</h3>
+            <p>{{ article.quotee_bio }}</p>
+            <ul class="links">
+                <!-- <li class="site">Contributor Website</li> -->
+                <li class="twitter"><a href="{{ article.quotee_twitter }}">Follow on Twitter</a></li>
+                <!-- <li class="share">Share this Opinion</li> -->
+            </ul>
+            <span class="pager next"></span>
+            <span class="pager prev"></span>
+        </div>
+    </aside>
+    {% endif %}
+</article>

@@ -1,0 +1,16 @@
+<div 
+	class= 	"nav-item {% if slide.id == current[0].id %}current{% endif %}"  
+	style="background-image:url({{ slide.thumbnail }});">
+	<h4>
+		<span class="date">
+		{% if slide.id == current.id %} Current Topic
+			{{ dump('here') }}
+		{% elseif slide.type == "Upcoming" %} Upcoming
+		{% else %} {{ slide.display_date }}
+		{% endif %}
+		</span>
+	</h4>
+	<h3>
+		{{ slide.post_title }}
+	</h3>
+</div>

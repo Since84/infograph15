@@ -1,0 +1,337 @@
+<body id="infograph_application">
+    <ul class="skip-nav">
+        <li><a href="#skip-navigation">Skip to navigation</a></li>
+        <li><a href="#skip-content">Skip to main content</a></li>
+        <li><a href="#skip-footer">Skip to footer</a></li>
+    </ul>
+    <!-- sitewrap contains whole site and masks off-canvas menu -->
+    <div id="share-bar">
+        <div class="container">
+            <a href="#" class="scrolltotop">Infogra.ph</a>
+            <ul class="sharing">
+                <li class="twitter"><a href="#"><i class="fa icon-twitter"></i><span> Tweet This</span></a></li>
+                <li class="facebook"><a href="#"><i class="fa icon-facebook"></i><span> Recommend This</span></a></li>
+                <li class="share-more"><a href="#"><i class="fa icon-plus"></i><span> More Sharing Options</span></a></li>
+            </ul>
+        </div> 
+    </div>
+    <div id="sitewrap">
+        <!-- sitecanvas is what slides when the menu comes in -->    
+        <div id="sitecanvas">
+            <div class="wrapper">
+                <div id="site-menu">
+                    <div class="container row">
+                        <!-- Menu Starts -->
+                        <h2 class="more-info">More Info</h2>
+                        <div class="sidebar three columns">
+                            <ul id="menu2">
+                                <li><a id="about" href="#">About Infogra.ph</a></li>
+                                <li><a id="commenting" href="#">Commenting Policy</a></li>
+                                <!-- <li><a id="contact" href="#">Contact Us</a></li> -->
+                                <li><a id="elefint" href="http://elefint.com">
+                                    {% include 'views/svg/elefint.svg' %}
+                                    A project of Elefint Designs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="seven columns">
+                            <div id="menu" class="owl-carousel">
+                                {{ more_info }}
+                            </div>
+                            <div class="customNavigation">
+                                <a class="btn prev"><i class="fa icon-angle-left"></i></a>
+                                <a class="btn next"><i class="fa icon-angle-right"></i></a>
+                            </div>
+                        </div>
+                            <!-- Menu Ends -->
+                    </div>
+                </div>
+                <header class="full-width">
+                    
+                    <div id="banner" class="container">
+                        <span class="menu-button"></span>
+                        <h1 class="logo"> 
+                            <img class="large-logo" src="{{ bloginfo('stylesheet_directory') }}/images/logo_large_white.png" alt="Logo" />
+                            <img class="small-logo" src="{{ bloginfo('stylesheet_directory') }}/images/logo_small.png" alt="Small Logo" />
+                            <span class="tagline">Curating and visually exploring complex topics</span>
+                        </h1>
+                        <ul class="sharing">
+                            <!-- <li class="follow-us">Follow Us</li> -->
+                            <li class="social twitter"><a href="http://facebook.com/elefint" target="_blank" title="Follow us on Twitter"></a></li>
+                            <li class="social facebook"><a href="http://twitter.com/elefint" target="_blank" title="Follow us on Facebook"></a></li>
+                            {#                             <li><a href="#" title="Share This Page"><i class="fa icon-plus"></i></a></li> #}
+                        </ul>
+                    </div>
+                </header>
+                    <section class="full-width" id="infographic">
+                        <div class="infographic">
+                            <div class="feature-image">
+                                <img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/race-and-justice-banner.jpg"/>
+                            </div>
+                            <ul class="tiles">
+                                <li class="tile-container">
+                                    <div class="card">
+                                        <span class="front" corner-color="black"><img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/front/1.jpg"/></span>
+                                        <span class="back" corner-color="yellow"><img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/back/1.jpg"/></span>
+                                    </div>
+                                </li>
+                                <li class="tile-container">
+                                    <div class="card" >
+                                        <span class="front" corner-color="blue"><img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/front/2.jpg"/></span>
+                                        <span class="back" corner-color="white"><img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/back/2.jpg"/></span>
+                                    </div>
+                                </li>
+                                <li class="tile-container">
+                                    <div class="card" >
+                                        <span class="front" corner-color="yellow"><img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/front/3.jpg"/></span>
+                                        <span class="back" corner-color="darkblue"><img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/back/3.jpg"/></span>
+                                    </div>
+                                </li>
+                                <li class="tile-container">
+                                    <div class="card" >
+                                        <span class="front" corner-color="darkblue"><img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/front/4.jpg"/></span>
+                                        <span class="back" corner-color="blue">
+                                            <img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/back/4.jpg"/>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="tile-container">
+                                    <div class="card" >
+                                        <span class="front" corner-color="yellow"><img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/front/5.jpg"/></span>
+                                        <span class="back" corner-color="black">
+                                            <img class="animation" src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/trigger-happy.gif"/>
+                                            <img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/back/5.jpg"/></span>
+                                    </div>
+                                </li>
+                                <li class="tile-container">
+                                    <div class="card" >
+                                        <span class="front" corner-color="black"><img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/front/6.jpg"/></span>
+                                        <span class="back" corner-color="yellow"><img src="{{ bloginfo('stylesheet_directory') }}/images/race-justice/back/6.jpg"/></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    {% for p in post %}
+                    <section class="container main">
+                        
+                            <article id="article">
+                                <a id="skip-content" ></a>
+                                <div class="post-preview">
+                                    <span class="post-date">{{ p.post_date }}</span>
+                                    <h2 class="post-title">
+                                        {{ p.post_title }}
+                                    </h2>
+                                    <h3>{{ p.post_subtitle }}</h3>
+                                    <p>{{ p.post_excerpt }}</p>
+                                    <span class="toggle-infographic"></span>
+                                </div>
+                                <div class="post-content">
+                                    {{ p.post_content }}
+                                    {% include 'views/components/source-list.twig' %}
+                                </div>
+
+                                <aside id="recommended-articles">
+                                    <h4>Recommended Reading</h4>
+                                    {% for article in p.get_field('recommended') %}
+                                        {% include 'views/recommended_article.twig' %}
+                                    {% endfor %}   
+                                </aside>
+                            </article>
+                    </section>
+                    <section id="opinions" class="full-width">
+                        <div class="container">
+                            <h5>Guest Opinions</h5>
+                            <div id="opinionsources" class="owl-carousel">
+                                {% if p.get_field('opinions') %}
+                                    {% for source in p.get_field('opinions') %}
+                                        {% include 'views/source.twig' %}
+                                    {% endfor %}   
+                                {% else %}
+                                    <div class="source">
+                                        <div class="author">
+                                            <div class="authorphoto">
+                                                <img src="{{ bloginfo('stylesheet_directory') }}/images/janacarter.jpg" alt="">
+                                            </div>
+                                            <a class="readmore"><span></span></a>
+                                        </div>
+                                        <div class="opinion-meta">
+                                            <h3>Jana Carter</h3>
+                                            <h4>Civil Right Attorney</h4>
+                                        </div>
+                                    </div>
+                                    <div class="source">
+                                        <div class="author">
+                                            <div class="authorphoto">
+                                                <img src="{{ bloginfo('stylesheet_directory') }}/images/contributor1.jpg" alt="">
+                                            </div>
+                                            <a class="readmore"><span></span></a>
+                                        </div>
+                                        <div class="opinion-meta">
+                                            <h3>Clarke</h3>
+                                            <h4></h4>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    <!--<div class="customNavigation">
+                        <a class="btn prev"><i class="fa icon-angle-left"></i></a>
+                        <a class="btn next"><i class="fa icon-angle-right"></i></a>
+                        <a class="closequote">Close</a>
+                    </div> -->
+                    <div id="opinionpieces" class="owl-carousel closed">
+                        {% if p.get_field('opinions') %}
+                            {% for article in p.get_field('opinions') %}
+                                {% include 'views/source_article.twig' %}
+                            {% endfor %}   
+
+                        {% else %}
+                            <article>
+                                <h2>Reflections on my pilgrimage to Selma.</h2>
+                                <p>
+                                    Life-expectancy, fight against oppression criteria visionary solutions; partnership collaborative cities detection catalytic effect dedicated. Humanitarian, committed invest; experience in the field involvement sustainability. Agency human rights, accelerate progress design thinking Millennium Development Goals country storytelling social analysis honesty liberal. Significant Kony 2012 positive social change think tank save the world economic security innovate challenges improving quality solution vulnerable citizens transform.
+                                </p>
+                                <aside class="bio">
+                                    <div class="authorphoto">
+                                        <img src="{{ bloginfo('stylesheet_directory') }}/images/janacarter.jpg" alt="Jana Carter">
+                                    </div>
+                                    <div class="detail">
+                                        <h3>About Contributor</h3>
+                                        <p>Jana Carter is a lawyer, divinity student, wife, soccer mom, adventurer and backpacker, and has worked in the fields of civil rights, racial justice, education, and mediation. Jana and her husband live in Los Angeles with their two sons. Jana is affiliated with Magic Labs Media, a start-up media company. She doesn’t tweet much but could be encouraged to do so if more than 47 of her closest friends and family members chose to follow her @janamish.</p>
+                                        <ul class="links">
+                                            <!-- <li class="site">Contributor Website</li> -->
+                                            <li class="twitter"><a href="twitter.com/janamish">Follow on Twitter</a></li>
+                                            <!-- <li class="share">Share this Opinion</li> -->
+                                        </ul>
+                                        <span class="pager next"></span>
+                                        <span class="pager prev"></span>
+                                    </div>
+                                </aside>
+                            </article>
+                            <article>
+                                <h2>Where are you coming from?</h2>
+                                <p>
+                                    Last year two LAPD officers crossed two lanes of traffic, jumped the curb, nearly hit me with their cruiser, jumped out, ran up to me shouting, “You’re not being arrested", put me in handcuffs and detained me. I was accused of climbing through a window and stealing someone’s television. I fit the description of the suspect. I waited on the side of road in handcuffs while they brought the victim to ID. It took 30 minutes.
+                                </p>
+                                <p>
+                                    One of the officers asked, “Where are you coming from?" 
+                                </p>
+                                <p>
+                                    “From a silent meditation retreat.” I replied. They looked confused. I hadn’t spoken in three days and my first words were being used to keep myself out of jail. One of them asked how the class was and said he was interested in learning meditation. I told him that it helped me stay calm in stressful situations.
+                                </p>
+                                <p>
+                                    “You seem calm.” He said.
+                                </p>
+                                <p>
+                                    I asked for further details on the suspect. “Black male, 6’, 300lbs.”
+                                    I am not as fit as used to be. I am maybe 200lbs. Maybe. 300 lbs is the size of an NFL lineman. A large, giant person. Not the kids of person who climbs through windows. Not me. Not kind of close to me. They let me go. I walked away. Aghast. Embittered. Happy that I didn’t go to jail. Angry that in I was in LA to better myself, see some loved ones and take time to contemplate some pretty serious racial conflict taking place in another part of my life. I ended up in handcuffs on the side of the road. An old black couple drove past me in a Cadillac. They stared out the window and I felt ashamed as the spotlight from the cruiser shined on my face. I’m not a criminal, but I was being tried in the roadside court of public opinion. 
+                                </p>
+                                <p>
+                                    I feel like a successful person. I am educated. People tell me I’m funny and that I have a nice smile. I’m a teacher, a coach. I’m a dean at a reputable school. A nerd. I love history books and geek out on maps. I think twitter is cool. I’ve never been to jail and most of the time, I dress nicely. I’m not a criminal. I have been told that being these things will allow the police to let me be. This is called respectability politics. I learned a long time ago that this is not true. I am a dark- skinned black person and that brings fear and a sense of criminality. I am not a criminal. My aim, my hope–the hope of millions of others–is to constantly thrive and not simply hope to survive.  We can all work to make that a reality for everyone, regardless of what they look like, how they dress, where they work and how nice they smile. We each deserve that simple experience of peace. 
+                                </p>
+                            </article>
+                        {% endif %}
+                    </div>
+                </section>
+                {% endfor %}
+                <footer id="footer" class="full-width">
+                    <a id="skip-footer" ></a >
+<!--                         <div class="container">
+                            <h2>Stay Informed!</h2>
+                            <span>Give us your email so we can let you know when we've posted a new topic.</span> -->
+
+                            <!-- Begin MailChimp Signup Form -->
+<!--                             <div id="mc_embed_signup">
+                                <form action="http://elefintdesigns.us2.list-manage.com/subscribe/post?u=ff95c087229b14ae18985e785&amp;id=6bb029d981" method="post" id="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="mc-field-group">
+                                            <input type="text" value="" id="mce-FNAME" placeholder="First Name">
+                                        </div>
+                                        <div class="mc-field-group">
+                                            <input type="text" value="" id="mce-LNAME" placeholder="Last Name">
+                                        </div>
+                                        <div class="mc-field-group">
+                                        </label>
+                                        <input type="email" value="" id="mce-EMAIL" class="required email" placeholder="Email Address">
+                                    </div>
+                                    <input type="submit" value="Subscribe" id="subscribe" class="mc-embedded-subscribe button">
+                                    <div id="mce-responses">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>     -->
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<!--                                     <div style="position: absolute; left: -5000px;"><input type="text" id="b_ff95c087229b14ae18985e785_6bb029d981" tabindex="-1" value=""></div>
+                                </div>
+                            </form>
+                        </div> -->
+                        <!--End mc_embed_signup-->
+
+                        <div class="contact-copyright">
+                            <a class="contact" href="mailto:info@elefint.com">Contact</a> 2015, Elefint Designs
+                            <a id="about" href="#">About Infogra.ph</a>
+                            <a id="commenting" href="#">Commenting Policy</a>
+                            <a class="elefint-mark" href="http://elefint.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 180 162" enable-background="new 0 0 180 162" xml:space="preserve"><g><path d="M125.1 30.1c-22.1-8.5-36.3 5.3-47.3 15.1c-72.4-9.9-63.9 50-70.7 103.2l0 0.1c0 1 0.9 1.9 1.9 1.9l0.2 0 c8.9-0.3 13.9 3.2 23 2.6l0.1 0c1 0 1.9-0.9 1.9-1.9c0-0.2 0-0.4-0.1-0.6l0-0.1c-4.1-12.9-5-30.2 5.2-37.3l0.3-0.2 c0.3-0.2 0.7-0.4 1.1-0.4c0.7 0 1.3 0.4 1.6 0.9l0.2 0.3c5.1 9 5.8 22.3 5.4 36.9l0 0.2c0 1 0.9 1.9 1.9 1.9h0.1 c10.3 0 20.6 0 30.9 0h0.2c0.8 0 1.5-0.5 1.8-1.2l0-0.1c4.7-11.1 12.7-18.9 19.2-28.3l0.3-0.4c0.3-0.5 0.9-0.8 1.5-0.8 c0.8 0 1.4 0.4 1.7 1.1l0.1 0.2c3.1 6.3 3.8 18.2 1.2 25.2l-0.1 0.3c-0.1 0.2-0.1 0.5-0.1 0.7c0 1 0.7 1.8 1.6 1.9 c0.1 0 0.2 0 0.3 0l0.1 0c4.5 0.4 12.1-1.8 19.3-1.1l0.3 0c0.8 0 1.5-0.5 1.8-1.3l0.1-0.2c6.2-21-15.3-45.7-13.5-58.5 c2.7-18.8 41.7-24.5 51.6-40.9C188.9 15.1 136.3-11.2 125.1 30.1z M71.1 127.6c-4.3-1.5-5.5-6.5-6.3-11.5c5.9-2.6 9-4.7 15.1-2.2 C82.6 123.8 72.2 121.5 71.1 127.6z M155.2 34.4c-2.8 2.8-11.6 3.1-15.8 1l-0.2-0.1c-0.6-0.3-1-0.9-1-1.7c0-0.2 0-0.3 0.1-0.4 l0.1-0.2c1.7-6.3 5.8-10.2 14.7-9.3C152.2 28.8 157 28.3 155.2 34.4z" class="logomark"/></g></svg>
+                                a project of elefint designs
+                            </a>
+                        </div>
+
+                    </div>
+                </footer>
+                <div class="infograph-modal">
+                    <form id="contact" class="box">
+                        <span class="close"></span>
+                        <div class="content">
+                            <h2>Contact Us</h2>
+                            <em>Do you have a correction? Feedback on the site? An idea for a future topic? Let us know!</em>
+                            <input type="text" placeholder="First Name"/>
+                            <input type="text" placeholder="Last Name"/>
+                            <input type="text" placeholder="Email Address"/>
+                            <textarea placeholder="Your Message"></textarea>
+                            <input type="submit" value="Send Now"/>
+<!--                             <input id="notify" type="checkbox" name="notify"/>
+    <label for="notify">Please notify me when new info is added to the site.</label> -->
+</div>
+</form>
+<section id="about" class="box">
+    <span class="close"></span>
+    <div class="content">
+        <h2>About Infograph</h2>
+        <p>
+            Infograph is a project of <a href="http://elefint.com" target="_blank">Elefint Designs</a>.
+        </p>
+    </div>
+    <ul class="links">
+        <li class="elefint">
+            <a class="elefint-mark" href="http://elefint.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 180 162" enable-background="new 0 0 180 162" xml:space="preserve"><g><path d="M125.1 30.1c-22.1-8.5-36.3 5.3-47.3 15.1c-72.4-9.9-63.9 50-70.7 103.2l0 0.1c0 1 0.9 1.9 1.9 1.9l0.2 0 c8.9-0.3 13.9 3.2 23 2.6l0.1 0c1 0 1.9-0.9 1.9-1.9c0-0.2 0-0.4-0.1-0.6l0-0.1c-4.1-12.9-5-30.2 5.2-37.3l0.3-0.2 c0.3-0.2 0.7-0.4 1.1-0.4c0.7 0 1.3 0.4 1.6 0.9l0.2 0.3c5.1 9 5.8 22.3 5.4 36.9l0 0.2c0 1 0.9 1.9 1.9 1.9h0.1 c10.3 0 20.6 0 30.9 0h0.2c0.8 0 1.5-0.5 1.8-1.2l0-0.1c4.7-11.1 12.7-18.9 19.2-28.3l0.3-0.4c0.3-0.5 0.9-0.8 1.5-0.8 c0.8 0 1.4 0.4 1.7 1.1l0.1 0.2c3.1 6.3 3.8 18.2 1.2 25.2l-0.1 0.3c-0.1 0.2-0.1 0.5-0.1 0.7c0 1 0.7 1.8 1.6 1.9 c0.1 0 0.2 0 0.3 0l0.1 0c4.5 0.4 12.1-1.8 19.3-1.1l0.3 0c0.8 0 1.5-0.5 1.8-1.3l0.1-0.2c6.2-21-15.3-45.7-13.5-58.5 c2.7-18.8 41.7-24.5 51.6-40.9C188.9 15.1 136.3-11.2 125.1 30.1z M71.1 127.6c-4.3-1.5-5.5-6.5-6.3-11.5c5.9-2.6 9-4.7 15.1-2.2 C82.6 123.8 72.2 121.5 71.1 127.6z M155.2 34.4c-2.8 2.8-11.6 3.1-15.8 1l-0.2-0.1c-0.6-0.3-1-0.9-1-1.7c0-0.2 0-0.3 0.1-0.4 l0.1-0.2c1.7-6.3 5.8-10.2 14.7-9.3C152.2 28.8 157 28.3 155.2 34.4z" class="logomark"/></g></svg>
+                <em>a project of<br>elefint designs</em>
+            </a>    
+        </li>                            
+        <li class="twitter">
+            <a href="http://twitter.com/elefint" target="_blank">Follow us on Twitter</a>
+        </li>
+        <li class="facebook">
+            <a href="http://facebook.com/elefint" target="_blank"> Like us on Facebook</a>
+        </li>
+        <li class="share"><a class="addthis_button_more" style="text-decoration:none;">Share this</a></li>
+    </ul>
+                </section>
+                <section id="commenting" class="box">
+                    <span class="close"></span>
+                    <div class="content">
+                        <h2>Why No Comments?</h2>
+                        <p>
+                            Our goal with Infograph is to create a space where we can bring clarity and new perspectives to important and timely issues. We expect that many of these issues will have drastically different perspectives, and while we love debate, internet comments too often devolve into personal attacks. If you feel like a valuable perspective is missing from this discussion, please <a class="contact-us" href="mailto:info@elefintdesigns.com">let us know.</a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="push"></div>
+        </div> 
+    </div>
+    <!-- /sitecanvas -->
+</div>
+<!-- /sitewrap -->
+</body>

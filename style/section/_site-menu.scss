@@ -1,0 +1,308 @@
+/* Site Menu Section of Infogra.ph */
+
+	#site-menu {
+	    align-content: center;
+	    border-bottom: 5px solid $coral;
+	    background: white;
+	    display: flex;
+	    width: 100%;
+	    overflow:hidden;
+	    padding: 0;
+	    max-height: 0;
+	    transition: max-height .75s ease-in;
+
+	    &.on {
+	    	max-height: 1000px;
+	    }
+
+	    .container {
+	    	padding: 20px 0 0;
+	    }
+
+	    .seven.columns{
+	    	margin-left: 0;
+	    	padding: 0 40px;
+	    }
+
+		h2.more-info {
+			@include sparkheader;
+			font-size: 30pt;
+		    margin: 0 40px 1em;
+		}
+		img {
+		    width: 187px;
+		    height: 187px;
+		}
+
+		#menu {
+		    display: inline-block;
+		    line-height: 0;
+
+		    .owl-stage-outer{
+		    	margin-bottom: 30px;
+		    	overflow: hidden;
+		    }
+
+			.owl-item {
+			    width: 9.7vw;
+			    height: 200px;
+			    max-width: 90%;
+			}
+			.nav-item {
+				width: 100%;
+				height: 85%;
+			    background-size: auto 100%;
+			    background-position: center center;
+			    border: 5px solid #03212e;
+			    padding: 30px 15px 20px;
+			    display: inline-block;
+			    position: relative;
+			    -webkit-transition: all .5s ease;
+			    -moz-transition: all .5s ease;
+			    -ms-transition: all .5s ease;
+			    -o-transition: all .5s ease;
+			    transition: all .5s ease;
+
+			    &:before{
+			    	content: '';
+			    	position: absolute;
+			    	display: block;
+			    	top: 0;
+			    	left: 0;
+			    	width: 100%;
+			    	height: 100%;
+			    	z-index: 0;
+			    	background-color: $darkbackblueopaque;
+			    	transition: .25s background-color ease-in-out;
+
+			    }
+
+			    &.current{
+			    	border: 5px solid $coral;
+			    	&:after{
+			    		@include triangledown( $coral, 30px );
+			    		content: '';
+			    		position: absolute;
+			    		height: 20px;
+			    		width: 0px;
+			    		bottom: -50px;
+			    		left: 0px;
+			    		right: 0px;
+			    		margin: auto;
+			    	}
+			    }
+
+				&.first, &:hover {
+				    background-size: auto 100%;
+				    border: 5px solid $coral;
+				}
+				&:hover {
+				    background-size: auto 110%;
+				    border: 5px solid #f96b61;
+				    &:before {
+				    	background-color: $darkbackblueopaquelight;
+				    }
+				}
+				a {
+				    background: rgba(0,0,0,.85);
+				    display: flex;
+				    align-items: center;
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+				    right: 0;
+				    bottom: 0;
+				    -webkit-transition: background .5s ease;
+				    -moz-transition: background .5s ease;
+				    -ms-transition: background .5s ease;
+				    -o-transition: background .5s ease;
+				    transition: background .5s ease;
+					&:hover {
+					    background: rgba(0,0,0,0);
+					}
+				}
+
+				h4 {
+				    color: #21a591;
+				    max-width: 90%;
+				    padding: 10px 5px;
+				    text-align: center;
+				    border: 2px solid white;
+				    border-radius: 4px;
+				    font-size: 12px;
+				    text-transform: capitalize;
+				    display: inline-block;
+				    z-index: 4;
+				    position: relative;
+				    .date { 
+				    	color: white; 
+				    	font-family: "bebas-neue";
+				    }
+				    // top: -1.5em;
+				}
+				h3 {
+				    color: #fff;
+				    opacity: 1;
+				    padding: 15px 0px;
+				    position: relative;
+				    font-family: "bebas-neue";
+				    top: 0;
+				    -webkit-transition: all .5s ease;
+				    -moz-transition: all .5s ease;
+				    -ms-transition: all .5s ease;
+				    -o-transition: all .5s ease;
+				    transition: all .5s ease;
+				}
+				&.first h3 {
+				    display: none;
+				}
+				&:hover h3, &:hover h4 {
+				    opacity: 0;
+				    top: -15px;
+				}
+
+			}
+		}
+
+	}
+
+
+	#sitewrap.show-nav {
+	    overflow-y:visible;
+
+		#sitecanvas {
+		    -webkit-transform: translate3d(0, 400px, 0);
+		    transform: translate3d(0, 400px, 0);
+		}
+	
+	}
+
+	h1 .fa-navicon {
+	    background-color: #f96b61;
+	    -webkit-border-radius: 3px;
+	    border-radius: 3px;
+	    color: #fff;
+	    margin: 0 15px 0 0;
+	    padding: 15px 15px;
+	}
+
+	a.next, a.prev {
+	    color: #fff;
+	    display: block;
+	    font-size: 300%;
+	    padding: 20px;
+	    position: relative;
+	    top: -180px;
+	    background: none;
+	    i:before{
+	    	color: $lightblue;
+	    	opacity: .5;
+	    }
+	}
+	a.prev {
+	    display: block;
+	    left: -35px;
+	    float: left;
+	}
+	a.next {
+	    display: block;
+	    float: right;
+	    right: -35px;
+	}
+	
+	.sidebar{
+		float: right;
+		@media screen and ( max-width: 767px ){
+			float: none;
+			margin: 1em 40px 3em;
+		}
+	}
+	#menu2 {
+		@include h2;
+		font-size: 16px;
+	    list-style-type: none;
+	    margin: 5px 0 0;
+	    padding: 0;
+
+
+		li {
+		    border-bottom: 1px solid $lightgray;
+		    padding: 15px 0;
+		    transition: color .5s;
+		    cursor: pointer;
+
+		    a{
+				color: $darktextblue; 
+				text-decoration: none; 
+				font-size: 14px;
+				transition: all .25s;
+
+				&#about::before{
+					content: "";
+					background-image: $infoicon; 
+					background-repeat: no-repeat;
+					background-position: center center;
+					background-size: contain;
+					height: 20px;
+				}
+				&#about:hover::before {
+					background-image: $infoiconactive;
+				}
+
+				&#commenting::before{
+					content: $comments;
+				}
+				&#contact::before{
+					content: $envelope;
+				}
+
+				.elefint-logo, &::before {
+					display: inline-block;
+					width: 21px;
+					vertical-align: middle;
+					margin-right: .25em;
+					font-family: "FontAwesome";
+					color: #B2B2B2;
+					transition: all .25s;
+					font-size: 20px;
+
+				}
+
+				.logomark{
+					fill: #B2B2B2;
+					transition: fill .25s;
+				}
+
+
+				&::before {
+					width: 30px;
+				}
+
+				&:hover{
+					color: $coral;
+					&::before {
+						color: $coral;
+					}
+				}
+
+		    }
+		
+			&:first-child {
+			    border-top: none;
+			    padding: 0 0 15px;
+			}
+			&:last-child {
+			    border-bottom: none;
+			    margin-bottom: 0;
+			    padding-bottom: 0;
+			}
+			&:hover {
+				color: $coral;
+				&::before{ color: $coral; }
+				.logomark{ fill: $coral; }
+			}
+
+
+
+		}	
+	}
