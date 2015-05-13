@@ -25,7 +25,11 @@
 		    position: relative;
 		    text-align: center;
 		    top: -1.5em;
+			@media screen and ( max-width: 770px ){
+				max-width: 100%;
+			}
 		}	
+
 
 
 		//Image Width
@@ -371,12 +375,19 @@
 						padding: 1em;
 						padding: 70px 70px 0px;
 						margin-bottom: .5em;
+						line-height: 1em;
+						@media screen and ( max-width: 770px ){
+							padding: 70px 30px 0;
+						}
 					}
 
 					& > p {
 						padding: 0 70px 10px 70px;
 						&:last-child{
 							padding-bottom: 70px;
+						}
+						@media screen and ( max-width: 770px ){
+							padding: 0 30px;
 						}
 					}
 

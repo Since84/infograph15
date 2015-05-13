@@ -318,7 +318,7 @@
 				}		
 			}
 
-			.source {
+			.date {
 				@include sparkheader;
 				padding: 5px;
 				border-radius: 5px;
@@ -329,11 +329,27 @@
 				border: 2px solid $darkbackblue;
 				transition: .25s all ease-in-out;
 			}
-			&:hover .source{
-				background: $coral;
-				border-color: $coral;
-				color: white;
+
+			.post-title{
+				margin-bottom: 3px;
 			}
+
+			.source{
+				font-style: italic;
+			}
+
+			&:hover{
+
+				.date{
+					background: $coral;
+					border-color: $coral;
+					color: white;
+				}
+				.post-title{
+					color: $coral;
+				}
+			} 
+
 
 
 		}
@@ -341,6 +357,7 @@
 		.post-title {
 			@include h4;
 			margin-bottom: .25em;
+			transition: .25s all ease-in-out;
 		}
 
 		p {
