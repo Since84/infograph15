@@ -19,6 +19,17 @@
 	    	padding: 20px 0 0;
 	    }
 
+	    .close{
+	    	position: absolute;
+	    	top: 20px;
+	    	right: 40px;
+	    	cursor: pointer;
+	    	.icon-close:before{
+				content: "\f00d";	
+				font-size: 26px;	
+	    	}
+	    }
+
 	    .seven.columns{
 	    	margin-left: 0;
 	    	padding: 0 40px;
@@ -190,7 +201,7 @@
 	    color: #fff;
 	    display: block;
 	    font-size: 300%;
-	    padding: 20px;
+	    // padding: 20px;
 	    position: relative;
 	    top: -180px;
 	    background: none;

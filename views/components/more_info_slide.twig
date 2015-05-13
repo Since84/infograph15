@@ -4,9 +4,8 @@
 	<h4>
 		<span class="date">
 		{% if slide.id == current.id %} Current Topic
-			{{ dump('here') }}
 		{% elseif slide.type == "Upcoming" %} Upcoming
-		{% else %} {{ slide.display_date }}
+		{% else %} {{ slide.display_date }} {{ slide.type }}
 		{% endif %}
 		</span>
 	</h4>

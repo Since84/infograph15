@@ -60,14 +60,26 @@ Template: spark_15
 		    padding-right: 3px;
 		    position: relative; 
 		    top: 5%;
+			&:before{
+				font-family: "FontAwesome";
+			}
+		}
+
+		.scrolltotop{
+			display: inline-block;
+			vertical-align: top;
 		}
 
 		ul.sharing {
 		    padding: 0;
+		    display: inline-block;
+		    vertical-align: top;
+		    float: right;
 
-			.sharing li {
+			li {
 			    font-size: 100%;
 			    margin-left: 0;
+			    display: inline-block;
 				a {
 				    color: #fff;
 				    display: block;
@@ -75,22 +87,39 @@ Template: spark_15
 				    line-height: 45px;
 				    padding: 0 20px;
 				    text-align: center;
+				    text-decoration: none;
 				    -webkit-transition: background .5s ease;
 				    -moz-transition: background .5s ease;
 				    -ms-transition: background .5s ease;
 				    -o-transition: background .5s ease;
 				    transition: background .5s ease;
+
+				    span{
+				    	color: white;
+				    	font-family: "Bebas-Neue";
+				    	font-size: 16px;
+				    }
 				}
 
-				&.facebook a{
-				    background:#3b5998;
+				&.facebook{
+					a{
+						background:#3b5998;
+					}	
+					i:before{
+						content: "\f087";
+					}
 				}
 				 &.facebook a:hover{
 				    background:#193a78;
 				}
-				 &.twitter a{
-				    background: #32a6ff;
-				}
+				 &.twitter {
+					a{
+						background: #32a6ff;
+					}
+					i:before{
+						content: "\f099";
+					}
+				 }
 				 &.twitter a:hover{
 				    background: #1a94e1;
 				}
@@ -101,11 +130,16 @@ Template: spark_15
 				    background: #eb6452;
 				}
 
+			}	
+			@media screen and ( max-width: 770px ){
+			 	width: 64%;
+				li {
+					width: 30%;
+					vertical-align: top;
+				}
 			}
-		
-			
-		
 		}
+
 	}
 
 	// Page Content :: All Page Content Styles

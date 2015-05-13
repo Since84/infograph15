@@ -42,7 +42,8 @@
 
 		//Sources
 		.source {
-		    padding: 0 5%;
+			padding: 0 5%;
+			margin: 0 50px;
 
 			&:hover .author {
 			    -moz-transform: rotate(45deg);
@@ -343,6 +344,10 @@
 				display: block;
 				width: 100%;
 				background: $darkbackblue;
+			}
+
+			.owl-stage-outer{
+				overflow: hidden;
 			}
 
 			.owl-item{

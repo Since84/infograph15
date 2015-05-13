@@ -31,6 +31,10 @@ h4{ @include h4; }
 h5{ @include h5; }
 h6{ @include h6; }
 
+#sitewrap {
+	overflow-x: hidden;
+}
+
 .container {
 	width: 100%;
 	max-width: $maxContainerWidth;

@@ -7,11 +7,15 @@
     <!-- sitewrap contains whole site and masks off-canvas menu -->
     <div id="share-bar">
         <div class="container">
-            <a href="#" class="scrolltotop">Infogra.ph</a>
+            <a href="#" class="scrolltotop">
+                <h1 class="logo"> 
+                    <img class="small-logo" src="{{ bloginfo('stylesheet_directory') }}/images/logo_small.png" alt="Small Logo" />
+                </h1>
+            </a>
             <ul class="sharing">
-                <li class="twitter"><a href="#"><i class="fa icon-twitter"></i><span> Tweet This</span></a></li>
-                <li class="facebook"><a href="#"><i class="fa icon-facebook"></i><span> Recommend This</span></a></li>
-                <li class="share-more"><a href="#"><i class="fa icon-plus"></i><span> More Sharing Options</span></a></li>
+                <li class="facebook"><a href="http://www.facebook.com/sharer/sharer.php?u={{ site.url }}&title={{ post[0].post_title }}" target="_blank"><i class="fa icon-facebook"></i><span> Recommend This</span></a>
+                <li class="twitter"><a href="http://twitter.com/intent/tweet?status={{ post[0].post_title }}+{{ site.url }}" target="_blank"><i class="fa icon-twitter"></i><span> Tweet This</span></a>
+                <li class="share-more"><a class="addthis_button_compact"><i class="fa icon-plus"></i><span> More Sharing Options</span></a>
             </ul>
         </div> 
     </div>
@@ -21,6 +25,9 @@
             <div class="wrapper">
                 <div id="site-menu">
                     <div class="container row">
+                        <span class="close">
+                            <i class="fa icon-close"></i>
+                        </span>
                         <!-- Menu Starts -->
                         <h2 class="more-info">More Info</h2>
                         <div class="sidebar three columns">
@@ -118,7 +125,7 @@
                             <article id="article">
                                 <a id="skip-content" ></a>
                                 <div class="post-preview">
-                                    <span class="post-date">{{ p.post_date }}</span>
+                                    <span class="post-date">{{ p.post_date|date("m.d.y") }}</span>
                                     <h2 class="post-title">
                                         {{ p.post_title }}
                                     </h2>
@@ -127,7 +134,9 @@
                                     <span class="toggle-infographic"></span>
                                 </div>
                                 <div class="post-content">
-                                    {{ p.post_content }}
+                                    {{ p.content }}
+                                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                                    <div class="addthis_sharing_toolbox"></div>
                                     {% include 'views/components/source-list.twig' %}
                                 </div>
 
@@ -237,14 +246,13 @@
                 {% endfor %}
                 <footer id="footer" class="full-width">
                     <a id="skip-footer" ></a >
-<!--                         <div class="container">
+                       <div class="container">
                             <h2>Stay Informed!</h2>
-                            <span>Give us your email so we can let you know when we've posted a new topic.</span> -->
+                            <span>Give us your email so we can let you know when we've posted a new topic.</span>
 
                             <!-- Begin MailChimp Signup Form -->
-<!--                             <div id="mc_embed_signup">
-                                <form action="http://elefintdesigns.us2.list-manage.com/subscribe/post?u=ff95c087229b14ae18985e785&amp;id=6bb029d981" method="post" id="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                    <div id="mc_embed_signup_scroll">
+                             <div id="mc_embed_signup">
+{#                                     <div id="mc_embed_signup_scroll">
                                         <div class="mc-field-group">
                                             <input type="text" value="" id="mce-FNAME" placeholder="First Name">
                                         </div>
@@ -259,12 +267,12 @@
                                     <div id="mce-responses">
                                         <div class="response" id="mce-error-response" style="display:none"></div>
                                         <div class="response" id="mce-success-response" style="display:none"></div>
-                                    </div>     -->
+                                    </div> 
                                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-<!--                                     <div style="position: absolute; left: -5000px;"><input type="text" id="b_ff95c087229b14ae18985e785_6bb029d981" tabindex="-1" value=""></div>
-                                </div>
-                            </form>
-                        </div> -->
+                                   <div style="position: absolute; left: -5000px;"><input type="text" id="b_ff95c087229b14ae18985e785_6bb029d981" tabindex="-1" value=""></div>
+                                </div> #}
+                                {{ signup }}
+                        </div>
                         <!--End mc_embed_signup-->
 
                         <div class="contact-copyright">
@@ -297,9 +305,9 @@
 <section id="about" class="box">
     <span class="close"></span>
     <div class="content">
-        <h2>About Infograph</h2>
+        <h2>{{ about.post_title }}</h2>
         <p>
-            Infograph is a project of <a href="http://elefint.com" target="_blank">Elefint Designs</a>.
+            {{ about.content }}
         </p>
     </div>
     <ul class="links">

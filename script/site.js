@@ -15,11 +15,14 @@
 
   		//Delegated Events for user actions
   		events: {
-      		"click .menu-button"            : "toggleNav",
+            "click .menu-button"            : "toggleNav",
+      		"click #site-menu .close"        : "closeNav",
             "click .post-preview"           : "toggleInfographic",
             "click a#about"                 : "activateModal",
             "click a#commenting"            : "activateModal",
-            "click .close"                  : "closeModal"
+            "click .close"                  : "closeModal",
+            "click .customNavigation .next" : "nextOwl",
+            "click .customNavigation .prev" : "prevOwl"
   		},
 
   		//Initialization function
@@ -79,6 +82,7 @@
             sync1.owlCarousel({
                 autoHeight: true,
                 animateIn: 'fadeInDown',
+                center: true,
                 items: 1,
                 margin: 100,
                 mouseDrag: false,
@@ -108,11 +112,10 @@
                         margin: 60
                     },
                     800: {
-                        items:3,
                         margin: 40
                     },
                     1000:{
-                        margin: 120
+                        // margin: 120
                     }
                 },
                 startPosition: 1,
@@ -154,6 +157,16 @@
             });
   		},
 
+        nextOwl: function(){
+            var owl = $('#menu').data('owlCarousel');
+            owl.next();
+        },
+
+        prevOwl: function(){
+            var owl = $('#menu').data('owlCarousel');
+            owl.prev();            
+        },
+
         initInfograph: function(){
             $('.card')
                 .on('click', function(){  
@@ -167,6 +180,10 @@
         toggleNav: function(){
             $("#site-menu").toggleClass('on');
             $("header").toggleClass('on');
+        },        
+        closeNav: function(){
+            $("#site-menu").removeClass('on');
+            $("header").removeClass('on');
         },
 
         toggleInfographic: function(){

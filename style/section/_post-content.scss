@@ -186,6 +186,37 @@
 	.post-content {
 		@include column(6);
 		margin-left: 0;
+		.addthis_button_more{
+			display: block;
+			margin: .5em 0 1em;
+			font-family: "Bebas-neue", sans-serif;
+			font-size: 22px;
+			span{
+				display: inline-block;
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+		}
+
+		.video{
+		    position: relative;
+		    padding-bottom: 56.25%;
+		    padding-top: 30px; 
+		    height: 0; 
+		    overflow: hidden;
+		    max-width: 100%;
+		}
+
+		.video iframe,
+		.video object,
+		.video embed {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		}
+
 	}
 	#recommended-articles {
 		@include column(5); 
@@ -241,14 +272,50 @@
 			    left: 0;
 			    right: 0;
 			}
-			img {
-			    float: left;
-			    height: auto;
+
+			.articlephoto{
+
 			    min-width: 32%;
 			    max-width: 32%;
 			    margin: 0 5% 0 0;
 			    width: 32%;
-			    border-radius: 50%;
+				background-image: url(images/radialbg.png);
+				background-size: cover;
+				padding: 3px;
+				-webkit-transition: all .6s ease-in-out;
+				-moz-transition: all .6s ease-in-out;
+				-ms-transition: all .6s ease-in-out;
+				-o-transition: all .6s ease-in-out;
+				transition: all .6s ease-in-out;
+
+				img {
+				    float: left;
+				    height: auto;
+				    border-radius: 50%;
+					-webkit-transition: all .6s ease-in-out;
+					-moz-transition: all .6s ease-in-out;
+					-ms-transition: all .6s ease-in-out;
+					-o-transition: all .6s ease-in-out;
+					transition: all .6s ease-in-out;
+				}
+
+			}
+			&:hover {
+				.articlephoto{
+					background-image: url(images/radialbg-orange.png);
+				    -moz-transform: rotate(-45deg);
+				    -webkit-transform: rotate(-45deg);
+				    -o-transform: rotate(-45deg);
+				    -ms-transform: rotate(-45deg);
+				    transform: rotate(-45deg);
+				}		
+				img{
+				    -moz-transform: rotate(45deg);
+				    -webkit-transform: rotate(45deg);
+				    -o-transform: rotate(45deg);
+				    -ms-transform: rotate(45deg);
+				    transform: rotate(45deg);					
+				}		
 			}
 
 			.source {
@@ -284,6 +351,13 @@
 		img {
 			display: inline-block;
 			vertical-align: top;
+		}
+	}
+
+	.addthis_sharing_toolbox{
+		margin: 1em 0;
+		.at-share-btn{
+			margin-right: .75em;
 		}
 	}
 
