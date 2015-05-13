@@ -4,7 +4,9 @@
 	    <img src="{{ article.thumbnail.url }}" alt="middle east" />
 	</div>
     <div class="entry">
-        <span class="date">{{ article.date }}</span>
+        {% if article.date %}
+        	<span class="date">{{ article.date }}</span>
+        {% endif %}
         <h4 class="post-title">{{ article.title }}</h4>
         <span class="source">{{ article.source_name }} </span>
         <p>{{ article.summary }}</p>
