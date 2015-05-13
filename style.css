@@ -2724,7 +2724,7 @@ i[class*=" icon-"] {
 }
 /* line 117, style/section/_header.scss */
 #infograph_application header .sharing li {
-  display: inline-flex;
+  display: inline-block;
   vertical-align: top;
 }
 /* line 122, style/section/_header.scss */
