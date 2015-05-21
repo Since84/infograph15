@@ -8,6 +8,7 @@
 	    width: 100%;
 	    background: $darkblue;
 	    border-top: 4px solid $lightblue;
+	    font-family: "Merriweather", sans-serif;
 
 		h5 {
 			@include h1;
@@ -345,9 +346,11 @@
 			}
 
 			.bio {
-				display: block;
+				display: inline-block;
+				clear: both;
 				width: 100%;
 				background: $darkbackblue;
+				font-family: "Helvetica", sans-serif;
 			}
 
 			.owl-stage-outer{
@@ -395,6 +398,7 @@
 						margin-top: 70px;
 						padding: 45px 100px;
 						border-radius: 0 0 10px 10px;
+						display: inline-block;
 						.authorphoto{
 							display:inline-block;
 							width: 160px;
@@ -436,9 +440,9 @@
 								margin-top: 1em;
 								li {
 									display: inline-block;
-									width: 32%;
+
 									@include sparkheader;
-									font-size: 18px;
+									font-size: 25px;
 									&::before{
 										display: inline-block;
 										margin-right: .5em;

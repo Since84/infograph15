@@ -8,6 +8,7 @@
 	overflow: visible;
 	@include row();
 
+
 	p {
 		margin-bottom: 1.5em;
 	}
@@ -56,6 +57,7 @@
 		color: white;
 		width: 100%;
 		margin-left: 0;
+		font-family: "merriweather",serif;
 		// @include column(12);
 		
 		p {
@@ -139,7 +141,6 @@
 				top: -120px;
 			}
 		}
-
 	}
 	&:not(.open) .post-preview { color: white; }
 	&.open {
@@ -186,6 +187,7 @@
 	.post-content {
 		@include column(6);
 		margin-left: 0;
+		font-family: "merriweather",serif;
 		.addthis_button_more{
 			display: block;
 			margin: .5em 0 1em;
@@ -381,6 +383,7 @@
 	.sources {
 		margin-top: 1em;
 		padding: 0;
+		font-family: "Helvetica", sans-serif;
 		* { color: #708d99; }
 
 		h4{

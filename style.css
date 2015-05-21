@@ -142,7 +142,7 @@ html {
 /* line 8, style/gumby/sass/_base.scss */
 body {
   background: #fff;
-  font-family: "Merriweather";
+  font-family: "Helvetica";
   font-weight: 400;
   color: #555555;
   position: relative;
@@ -2028,7 +2028,7 @@ img {
 html, body {
   width: 100%;
   height: 100%;
-  font-family: "merriweather",serif;
+  font-family: "helvetica",serif;
 }
 
 /* line 9, style/section/_base.scss */
@@ -2042,17 +2042,16 @@ body.infograph_application {
   color: #3B535D;
   font-size: 14px;
   line-height: 1.5em;
-  font-family: "merriweather",serif;
   overflow-x: hidden;
 }
 
-/* line 22, style/section/_base.scss */
+/* line 21, style/section/_base.scss */
 p, ul, ol, span, em {
   color: #3B535D;
   font-size: 14px;
 }
 
-/* line 27, style/section/_base.scss */
+/* line 26, style/section/_base.scss */
 h1 {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -2061,20 +2060,20 @@ h1 {
   line-height: 1em;
 }
 
-/* line 28, style/section/_base.scss */
+/* line 27, style/section/_base.scss */
 h2 {
   font-family: "helvetica", sans-serif;
   font-size: 25px;
 }
 
-/* line 29, style/section/_base.scss */
+/* line 28, style/section/_base.scss */
 h3 {
   font-family: "helvetica", sans-serif;
   font-weight: 700;
   font-size: 18px;
 }
 
-/* line 30, style/section/_base.scss */
+/* line 29, style/section/_base.scss */
 h4 {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -2082,7 +2081,7 @@ h4 {
   font-size: 20px;
 }
 
-/* line 31, style/section/_base.scss */
+/* line 30, style/section/_base.scss */
 h5 {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -2091,7 +2090,7 @@ h5 {
   font-size: 50.67px;
 }
 
-/* line 32, style/section/_base.scss */
+/* line 31, style/section/_base.scss */
 h6 {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -2100,12 +2099,12 @@ h6 {
   font-size: 32px;
 }
 
-/* line 34, style/section/_base.scss */
+/* line 33, style/section/_base.scss */
 #sitewrap {
   overflow-x: hidden;
 }
 
-/* line 38, style/section/_base.scss */
+/* line 37, style/section/_base.scss */
 .container {
   width: 100%;
   max-width: 1280px;
@@ -2123,7 +2122,7 @@ h6 {
   margin-left: 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 38, style/section/_base.scss */
+  /* line 37, style/section/_base.scss */
   .container {
     width: auto;
     min-width: 0;
@@ -2131,26 +2130,26 @@ h6 {
     margin-right: 0;
   }
 }
-/* line 44, style/section/_base.scss */
+/* line 43, style/section/_base.scss */
 .container .thirds {
   width: 79.63636%;
   margin-left: 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 44, style/section/_base.scss */
+  /* line 43, style/section/_base.scss */
   .container .thirds {
     float: left;
     margin-left: 0;
     width: 100%;
   }
 }
-/* line 48, style/section/_base.scss */
+/* line 47, style/section/_base.scss */
 .container .quarter {
   width: 28.72727%;
   margin-left: 12%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 48, style/section/_base.scss */
+  /* line 47, style/section/_base.scss */
   .container .quarter {
     float: left;
     margin-left: 0;
@@ -2162,7 +2161,7 @@ h6 {
   margin-left: 10.18182%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 48, style/section/_base.scss */
+  /* line 47, style/section/_base.scss */
   .container .quarter {
     margin-left: 0;
   }
@@ -2171,12 +2170,12 @@ h6 {
     margin-left: 0;
   }
 }
-/* line 54, style/section/_base.scss */
+/* line 53, style/section/_base.scss */
 .container .row .columns:first-of-type {
   margin-left: 0;
 }
 
-/* line 61, style/section/_base.scss */
+/* line 60, style/section/_base.scss */
 input, textarea {
   background: none;
   border: 2px solid #fff;
@@ -2184,41 +2183,41 @@ input, textarea {
   color: #fff;
   border-radius: 2px;
 }
-/* line 68, style/section/_base.scss */
+/* line 67, style/section/_base.scss */
 input:focus, textarea:focus {
   border-color: #49677c;
   outline: none;
   color: #49677c;
 }
-/* line 73, style/section/_base.scss */
+/* line 72, style/section/_base.scss */
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   /* WebKit browsers */
   color: white;
 }
-/* line 76, style/section/_base.scss */
+/* line 75, style/section/_base.scss */
 input:-moz-placeholder, textarea:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: white;
   opacity: 1;
 }
-/* line 80, style/section/_base.scss */
+/* line 79, style/section/_base.scss */
 input::-moz-placeholder, textarea::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: white;
   opacity: 1;
 }
-/* line 84, style/section/_base.scss */
+/* line 83, style/section/_base.scss */
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: white;
 }
 
-/* line 88, style/section/_base.scss */
+/* line 87, style/section/_base.scss */
 textarea {
   margin-top: 1em;
 }
 
-/* line 92, style/section/_base.scss */
+/* line 91, style/section/_base.scss */
 input[type="submit"] {
   font-family: "helvetica", sans-serif;
   font-size: 25px;
@@ -2231,7 +2230,7 @@ input[type="submit"] {
   color: white;
 }
 
-/* line 103, style/section/_base.scss */
+/* line 102, style/section/_base.scss */
 [class^="icon-"] a:before,
 [class*=" icon-"] a:before,
 [class^="icon-"] a:after,
@@ -2693,7 +2692,7 @@ i[class*=" icon-"] {
 }
 /* line 87, style/section/_header.scss */
 #infograph_application header .logo .tagline {
-  font-family: "merriweather", sans-serif;
+  font-family: "helvetica", sans-serif;
   font-size: 12px;
   color: #f96b61;
   font-size: 16px;
@@ -2961,26 +2960,26 @@ i[class*=" icon-"] {
     margin-right: 0;
   }
 }
-/* line 11, style/section/_post-content.scss */
+/* line 12, style/section/_post-content.scss */
 #infograph_application #article p {
   margin-bottom: 1.5em;
 }
-/* line 14, style/section/_post-content.scss */
+/* line 15, style/section/_post-content.scss */
 #infograph_application #article a:link {
   color: #f96b61;
   text-decoration: none;
 }
-/* line 18, style/section/_post-content.scss */
+/* line 19, style/section/_post-content.scss */
 #infograph_application #article a:visited {
   color: #d95650;
 }
-/* line 22, style/section/_post-content.scss */
+/* line 23, style/section/_post-content.scss */
 #infograph_application #article li {
   padding-left: 1em;
   margin-left: 1em;
   margin-bottom: 1.5em;
 }
-/* line 26, style/section/_post-content.scss */
+/* line 27, style/section/_post-content.scss */
 #infograph_application #article li::before {
   content: "•";
   position: absolute;
@@ -2988,21 +2987,21 @@ i[class*=" icon-"] {
   font-size: 18px;
   left: 2em;
 }
-/* line 34, style/section/_post-content.scss */
+/* line 35, style/section/_post-content.scss */
 #infograph_application #article ul, #infograph_application #article ol {
   padding: 5px 2em;
 }
-/* line 36, style/section/_post-content.scss */
+/* line 37, style/section/_post-content.scss */
 #infograph_application #article ol {
   padding-left: 0;
   counter-reset: item;
   position: relative;
 }
-/* line 40, style/section/_post-content.scss */
+/* line 41, style/section/_post-content.scss */
 #infograph_application #article ol li {
   padding-left: .5em;
 }
-/* line 42, style/section/_post-content.scss */
+/* line 43, style/section/_post-content.scss */
 #infograph_application #article ol li::before {
   content: counter(item) ". ";
   counter-increment: item;
@@ -3010,15 +3009,16 @@ i[class*=" icon-"] {
   left: 0;
   font-size: 14px;
 }
-/* line 53, style/section/_post-content.scss */
+/* line 54, style/section/_post-content.scss */
 #infograph_application #article .post-preview {
   transition: all 1s ease-in;
   transition-delay: .5s;
   color: white;
   width: 100%;
   margin-left: 0;
+  font-family: "merriweather",serif;
 }
-/* line 61, style/section/_post-content.scss */
+/* line 63, style/section/_post-content.scss */
 #infograph_application #article .post-preview p {
   font-size: 18px;
   color: white;
@@ -3026,12 +3026,12 @@ i[class*=" icon-"] {
   transition: all 1s ease-in;
   transition-delay: .5s;
 }
-/* line 69, style/section/_post-content.scss */
+/* line 71, style/section/_post-content.scss */
 #infograph_application #article .post-preview h2, #infograph_application #article .post-preview h3 {
   transition: all 1s ease-in;
   transition-delay: .5s;
 }
-/* line 74, style/section/_post-content.scss */
+/* line 76, style/section/_post-content.scss */
 #infograph_application #article .post-preview .post-date {
   font-family: "helvetica", sans-serif;
   font-size: 25px;
@@ -3044,7 +3044,7 @@ i[class*=" icon-"] {
   clear: both;
   color: white;
 }
-/* line 87, style/section/_post-content.scss */
+/* line 89, style/section/_post-content.scss */
 #infograph_application #article .post-preview .post-title {
   font-family: "Bebas-neue";
   font-size: 50px;
@@ -3054,7 +3054,7 @@ i[class*=" icon-"] {
   transition-delay: .5s;
   line-height: 1em;
 }
-/* line 97, style/section/_post-content.scss */
+/* line 99, style/section/_post-content.scss */
 #infograph_application #article .post-preview .toggle-infographic {
   font-family: "helvetica", sans-serif;
   font-size: 25px;
@@ -3066,78 +3066,78 @@ i[class*=" icon-"] {
   margin-top: 1em;
   cursor: pointer;
 }
-/* line 106, style/section/_post-content.scss */
+/* line 108, style/section/_post-content.scss */
 #infograph_application #article .post-preview .toggle-infographic:before {
   content: "";
   font-family: "FontAwesome";
   margin-right: .5em;
   color: white;
 }
-/* line 112, style/section/_post-content.scss */
+/* line 114, style/section/_post-content.scss */
 #infograph_application #article .post-preview .toggle-infographic::after {
   content: "View Infographic";
   font-family: "Helvetica";
   font-size: 20px;
   color: white;
 }
-/* line 118, style/section/_post-content.scss */
+/* line 120, style/section/_post-content.scss */
 #infograph_application #article .post-preview .toggle-infographic:hover {
   background-color: #ee5246;
 }
 @media only screen and (min-width: 860px) {
-  /* line 53, style/section/_post-content.scss */
+  /* line 54, style/section/_post-content.scss */
   #infograph_application #article .post-preview {
     margin-top: -350px;
     margin-bottom: 150px;
   }
 }
 @media only screen and (max-width: 860px) {
-  /* line 53, style/section/_post-content.scss */
+  /* line 54, style/section/_post-content.scss */
   #infograph_application #article .post-preview {
     margin-top: 40px;
   }
-  /* line 129, style/section/_post-content.scss */
+  /* line 131, style/section/_post-content.scss */
   #infograph_application #article .post-preview p {
     color: #3B535D;
   }
-  /* line 130, style/section/_post-content.scss */
+  /* line 132, style/section/_post-content.scss */
   #infograph_application #article .post-preview .post-date {
     border-color: #0B242F;
     color: #0B242F;
   }
-  /* line 135, style/section/_post-content.scss */
+  /* line 137, style/section/_post-content.scss */
   #infograph_application #article .post-preview h2 {
     color: #0B242F;
   }
-  /* line 136, style/section/_post-content.scss */
+  /* line 138, style/section/_post-content.scss */
   #infograph_application #article .post-preview h3 {
     color: #f96b61;
   }
-  /* line 137, style/section/_post-content.scss */
+  /* line 139, style/section/_post-content.scss */
   #infograph_application #article .post-preview .toggle-infographic {
     position: absolute;
     top: -120px;
   }
 }
-/* line 144, style/section/_post-content.scss */
+/* line 145, style/section/_post-content.scss */
 #infograph_application #article:not(.open) .post-preview {
   color: white;
 }
-/* line 146, style/section/_post-content.scss */
+/* line 147, style/section/_post-content.scss */
 #infograph_application #article.open .post-preview {
   margin-top: 2em;
   margin-bottom: 0;
 }
-/* line 149, style/section/_post-content.scss */
+/* line 150, style/section/_post-content.scss */
 #infograph_application #article.open .post-preview p {
   color: #3B535D;
 }
-/* line 150, style/section/_post-content.scss */
+/* line 151, style/section/_post-content.scss */
 #infograph_application #article.open .post-preview .post-date {
   border-color: #0B242F;
   color: #0B242F;
 }
-/* line 154, style/section/_post-content.scss */
+/* line 155, style/section/_post-content.scss */
 #infograph_application #article.open .post-preview .toggle-infographic {
   position: absolute;
   top: 0px;
@@ -3148,7 +3148,7 @@ i[class*=" icon-"] {
   padding: 5px 10px;
   transition: .25s all ease-in-out 1s;
 }
-/* line 163, style/section/_post-content.scss */
+/* line 164, style/section/_post-content.scss */
 #infograph_application #article.open .post-preview .toggle-infographic::before, #infograph_application #article.open .post-preview .toggle-infographic::after {
   display: block;
   width: auto;
@@ -3156,51 +3156,52 @@ i[class*=" icon-"] {
   text-align: center;
   color: white;
 }
-/* line 170, style/section/_post-content.scss */
+/* line 171, style/section/_post-content.scss */
 #infograph_application #article.open .post-preview .toggle-infographic::before {
   content: "";
 }
-/* line 173, style/section/_post-content.scss */
+/* line 174, style/section/_post-content.scss */
 #infograph_application #article.open .post-preview .toggle-infographic::after {
   content: "Close";
   font-family: "Helvetica";
   font-size: 18px;
 }
-/* line 182, style/section/_post-content.scss */
+/* line 183, style/section/_post-content.scss */
 #infograph_application #article.open h2 {
   color: #0B242F;
 }
-/* line 183, style/section/_post-content.scss */
+/* line 184, style/section/_post-content.scss */
 #infograph_application #article.open h3 {
   color: #f96b61;
 }
-/* line 186, style/section/_post-content.scss */
+/* line 187, style/section/_post-content.scss */
 #infograph_application #article .post-content {
   width: 59.27273%;
   margin-left: 0;
+  font-family: "merriweather",serif;
 }
 @media only screen and (max-width: 767px) {
-  /* line 186, style/section/_post-content.scss */
+  /* line 187, style/section/_post-content.scss */
   #infograph_application #article .post-content {
     float: left;
     margin-left: 0;
     width: 100%;
   }
 }
-/* line 189, style/section/_post-content.scss */
+/* line 191, style/section/_post-content.scss */
 #infograph_application #article .post-content .addthis_button_more {
   display: block;
   margin: .5em 0 1em;
   font-family: "Bebas-neue", sans-serif;
   font-size: 22px;
 }
-/* line 194, style/section/_post-content.scss */
+/* line 196, style/section/_post-content.scss */
 #infograph_application #article .post-content .addthis_button_more span {
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
 }
-/* line 201, style/section/_post-content.scss */
+/* line 203, style/section/_post-content.scss */
 #infograph_application #article .post-content .video {
   position: relative;
   padding-bottom: 56.25%;
@@ -3209,7 +3210,7 @@ i[class*=" icon-"] {
   overflow: hidden;
   max-width: 100%;
 }
-/* line 210, style/section/_post-content.scss */
+/* line 212, style/section/_post-content.scss */
 #infograph_application #article .post-content .video iframe,
 #infograph_application #article .post-content .video object,
 #infograph_application #article .post-content .video embed {
@@ -3219,14 +3220,14 @@ i[class*=" icon-"] {
   width: 100%;
   height: 100%;
 }
-/* line 221, style/section/_post-content.scss */
+/* line 223, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles {
   width: 49.09091%;
   max-width: 290px;
   float: right;
 }
 @media only screen and (max-width: 767px) {
-  /* line 221, style/section/_post-content.scss */
+  /* line 223, style/section/_post-content.scss */
   #infograph_application #article #recommended-articles {
     float: left;
     margin-left: 0;
@@ -3234,38 +3235,38 @@ i[class*=" icon-"] {
   }
 }
 @media only screen and (max-width: 770px) {
-  /* line 221, style/section/_post-content.scss */
+  /* line 223, style/section/_post-content.scss */
   #infograph_application #article #recommended-articles {
     margin-top: 40px;
     max-width: none;
     width: 100%;
   }
 }
-/* line 231, style/section/_post-content.scss */
+/* line 233, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles.sticky {
   position: fixed;
   top: 80px;
   right: 45px;
 }
-/* line 236, style/section/_post-content.scss */
+/* line 238, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles.sticky p {
   max-height: 0;
   overflow: hidden;
 }
-/* line 240, style/section/_post-content.scss */
+/* line 242, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles.sticky.sticky-bottom {
   position: absolute;
   bottom: 40px;
   display: block;
 }
-/* line 247, style/section/_post-content.scss */
+/* line 249, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles h4 {
   margin-bottom: 1em;
   font-size: 30px;
   font-family: "Bebas-neue", sans-serif;
   color: #3b535d;
 }
-/* line 254, style/section/_post-content.scss */
+/* line 256, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended {
   align-items: flex-start;
   display: inline-flex;
@@ -3276,11 +3277,11 @@ i[class*=" icon-"] {
   border-bottom: 1px solid #d9d9d9;
   position: relative;
 }
-/* line 264, style/section/_post-content.scss */
+/* line 266, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended:last-child {
   border: none;
 }
-/* line 268, style/section/_post-content.scss */
+/* line 270, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended a {
   position: absolute;
   top: 0;
@@ -3288,7 +3289,7 @@ i[class*=" icon-"] {
   left: 0;
   right: 0;
 }
-/* line 276, style/section/_post-content.scss */
+/* line 278, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended .articlephoto {
   min-width: 32%;
   max-width: 32%;
@@ -3303,7 +3304,7 @@ i[class*=" icon-"] {
   -o-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
-/* line 291, style/section/_post-content.scss */
+/* line 293, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended .articlephoto img {
   float: left;
   height: auto;
@@ -3314,7 +3315,7 @@ i[class*=" icon-"] {
   -o-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
-/* line 304, style/section/_post-content.scss */
+/* line 306, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended:hover .articlephoto {
   background-image: url(images/radialbg-orange.png);
   -moz-transform: rotate(-45deg);
@@ -3323,7 +3324,7 @@ i[class*=" icon-"] {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 312, style/section/_post-content.scss */
+/* line 314, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended:hover img {
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -3331,7 +3332,7 @@ i[class*=" icon-"] {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 321, style/section/_post-content.scss */
+/* line 323, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended .date {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -3345,25 +3346,25 @@ i[class*=" icon-"] {
   border: 2px solid #0B242F;
   transition: .25s all ease-in-out;
 }
-/* line 333, style/section/_post-content.scss */
+/* line 335, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended .post-title {
   margin-bottom: 3px;
 }
-/* line 337, style/section/_post-content.scss */
+/* line 339, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended .source {
   font-style: italic;
 }
-/* line 343, style/section/_post-content.scss */
+/* line 345, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended:hover .date {
   background: #f96b61;
   border-color: #f96b61;
   color: white;
 }
-/* line 348, style/section/_post-content.scss */
+/* line 350, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended:hover .post-title {
   color: #f96b61;
 }
-/* line 357, style/section/_post-content.scss */
+/* line 359, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .post-title {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -3372,35 +3373,36 @@ i[class*=" icon-"] {
   margin-bottom: .25em;
   transition: .25s all ease-in-out;
 }
-/* line 363, style/section/_post-content.scss */
+/* line 365, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles p {
-  font-family: "merriweather", sans-serif;
+  font-family: "helvetica", sans-serif;
   font-size: 12px;
   transition: all .25s linear;
 }
-/* line 368, style/section/_post-content.scss */
+/* line 370, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles img {
   display: inline-block;
   vertical-align: top;
 }
-/* line 374, style/section/_post-content.scss */
+/* line 376, style/section/_post-content.scss */
 #infograph_application #article .addthis_sharing_toolbox {
   margin: 1em 0;
 }
-/* line 376, style/section/_post-content.scss */
+/* line 378, style/section/_post-content.scss */
 #infograph_application #article .addthis_sharing_toolbox .at-share-btn {
   margin-right: .75em;
 }
-/* line 381, style/section/_post-content.scss */
+/* line 383, style/section/_post-content.scss */
 #infograph_application #article .sources {
   margin-top: 1em;
   padding: 0;
+  font-family: "Helvetica", sans-serif;
 }
-/* line 384, style/section/_post-content.scss */
+/* line 387, style/section/_post-content.scss */
 #infograph_application #article .sources * {
   color: #708d99;
 }
-/* line 386, style/section/_post-content.scss */
+/* line 389, style/section/_post-content.scss */
 #infograph_application #article .sources h4 {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -3409,11 +3411,11 @@ i[class*=" icon-"] {
   font-size: 30px;
   margin-bottom: 20px;
 }
-/* line 392, style/section/_post-content.scss */
+/* line 395, style/section/_post-content.scss */
 #infograph_application #article .sources a {
   color: #21a5b9;
 }
-/* line 396, style/section/_post-content.scss */
+/* line 399, style/section/_post-content.scss */
 #infograph_application #article .sources li {
   margin-bottom: 5px;
 }
@@ -3426,8 +3428,9 @@ i[class*=" icon-"] {
   width: 100%;
   background: #172939;
   border-top: 4px solid #21a5b9;
+  font-family: "Merriweather", sans-serif;
 }
-/* line 12, style/section/_opinions.scss */
+/* line 13, style/section/_opinions.scss */
 #infograph_application section#opinions h5 {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -3450,29 +3453,29 @@ i[class*=" icon-"] {
   top: -1.5em;
 }
 @media screen and (max-width: 770px) {
-  /* line 12, style/section/_opinions.scss */
+  /* line 13, style/section/_opinions.scss */
   #infograph_application section#opinions h5 {
     max-width: 100%;
   }
 }
-/* line 36, style/section/_opinions.scss */
+/* line 37, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionsources img, #infograph_application section#opinions #opinionpieces img {
   max-width: 100%;
 }
-/* line 40, style/section/_opinions.scss */
+/* line 41, style/section/_opinions.scss */
 #infograph_application section#opinions .owl-stage {
   margin: auto;
 }
-/* line 43, style/section/_opinions.scss */
+/* line 44, style/section/_opinions.scss */
 #infograph_application section#opinions .owl-stage-outer {
   overflow: visible;
 }
-/* line 48, style/section/_opinions.scss */
+/* line 49, style/section/_opinions.scss */
 #infograph_application section#opinions .source {
   padding: 0 5%;
   margin: 0 50px;
 }
-/* line 52, style/section/_opinions.scss */
+/* line 53, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .author {
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -3480,11 +3483,11 @@ i[class*=" icon-"] {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 61, style/section/_opinions.scss */
+/* line 62, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .readmore span {
   top: 0;
 }
-/* line 64, style/section/_opinions.scss */
+/* line 65, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .readmore span:before {
   content: 'Read More';
   -webkit-transition: color .3s ease-in-out;
@@ -3493,12 +3496,12 @@ i[class*=" icon-"] {
   -o-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out;
 }
-/* line 74, style/section/_opinions.scss */
+/* line 75, style/section/_opinions.scss */
 #infograph_application section#opinions .source:active span:before {
   color: #f96b61;
   color: rgba(249, 107, 97, 0);
 }
-/* line 79, style/section/_opinions.scss */
+/* line 80, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .author {
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -3506,11 +3509,11 @@ i[class*=" icon-"] {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 87, style/section/_opinions.scss */
+/* line 88, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .readmore span {
   top: 0;
 }
-/* line 91, style/section/_opinions.scss */
+/* line 92, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .readmore {
   opacity: 1;
   top: 20px;
@@ -3518,7 +3521,7 @@ i[class*=" icon-"] {
   bottom: 20px;
   left: 20px;
 }
-/* line 98, style/section/_opinions.scss */
+/* line 99, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .readmore span {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -3529,13 +3532,13 @@ i[class*=" icon-"] {
   border-radius: 4px;
   font-size: 20px;
 }
-/* line 105, style/section/_opinions.scss */
+/* line 106, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .readmore span::before {
   content: "";
   font-family: "FontAwesome";
   margin-right: 5px;
 }
-/* line 110, style/section/_opinions.scss */
+/* line 111, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .readmore span::after {
   content: 'Read';
   -webkit-transition: color .3s ease-in-out;
@@ -3544,32 +3547,32 @@ i[class*=" icon-"] {
   -o-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out;
 }
-/* line 122, style/section/_opinions.scss */
+/* line 123, style/section/_opinions.scss */
 #infograph_application section#opinions .source.current .authorphoto img {
   opacity: 1;
 }
-/* line 125, style/section/_opinions.scss */
+/* line 126, style/section/_opinions.scss */
 #infograph_application section#opinions .source.current .author h4 {
   opacity: 0;
 }
-/* line 130, style/section/_opinions.scss */
+/* line 131, style/section/_opinions.scss */
 #infograph_application section#opinions .source.current:hover .readmore span::before {
   content: "";
 }
-/* line 133, style/section/_opinions.scss */
+/* line 134, style/section/_opinions.scss */
 #infograph_application section#opinions .source.current:hover .readmore span::after {
   content: 'Close';
 }
-/* line 143, style/section/_opinions.scss */
+/* line 144, style/section/_opinions.scss */
 #infograph_application section#opinions .source:active span:before {
   color: #f96b61;
   color: rgba(249, 107, 97, 0);
 }
-/* line 148, style/section/_opinions.scss */
+/* line 149, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .authorphoto img {
   opacity: .85;
 }
-/* line 151, style/section/_opinions.scss */
+/* line 152, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .author h4, #infograph_application section#opinions .source:hover .readmore, #infograph_application section#opinions .source:hover .authorphoto {
   -moz-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -3577,7 +3580,7 @@ i[class*=" icon-"] {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 161, style/section/_opinions.scss */
+/* line 162, style/section/_opinions.scss */
 #infograph_application section#opinions .source:hover .author h4 {
   border: 1px solid #f96b61;
   opacity: 0;
@@ -3586,11 +3589,11 @@ i[class*=" icon-"] {
   bottom: 30px;
   left: 30px;
 }
-/* line 170, style/section/_opinions.scss */
+/* line 171, style/section/_opinions.scss */
 #infograph_application section#opinions .source h4 {
   min-height: 1em;
 }
-/* line 176, style/section/_opinions.scss */
+/* line 177, style/section/_opinions.scss */
 #infograph_application section#opinions .active .source::after {
   content: "";
   position: absolute;
@@ -3607,13 +3610,13 @@ i[class*=" icon-"] {
   opacity: 0;
   transition: 1.1Fis opacity, 1s bottom;
 }
-/* line 192, style/section/_opinions.scss */
+/* line 193, style/section/_opinions.scss */
 #infograph_application section#opinions .active .source.current::after {
   opacity: 1;
   transition-delay: 1s, 0s;
   bottom: -36px;
 }
-/* line 199, style/section/_opinions.scss */
+/* line 200, style/section/_opinions.scss */
 #infograph_application section#opinions .author {
   align-items: center;
   background-image: url(images/radialbg.png);
@@ -3633,7 +3636,7 @@ i[class*=" icon-"] {
   -o-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
-/* line 218, style/section/_opinions.scss */
+/* line 219, style/section/_opinions.scss */
 #infograph_application section#opinions .author h4, #infograph_application section#opinions .author .readmore {
   align-items: center;
   -webkit-border-radius: 50%;
@@ -3648,11 +3651,11 @@ i[class*=" icon-"] {
   -o-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
-/* line 232, style/section/_opinions.scss */
+/* line 233, style/section/_opinions.scss */
 #infograph_application section#opinions .author h4 span, #infograph_application section#opinions .author .readmore span {
   margin: 0 auto;
 }
-/* line 238, style/section/_opinions.scss */
+/* line 239, style/section/_opinions.scss */
 #infograph_application section#opinions .author h4 {
   border: 2px solid #fff;
   outline: 1px solid transparent;
@@ -3662,13 +3665,13 @@ i[class*=" icon-"] {
   bottom: 50px;
   left: 50px;
 }
-/* line 246, style/section/_opinions.scss */
+/* line 247, style/section/_opinions.scss */
 #infograph_application section#opinions .author h4 small {
   clear: left;
   display: block;
   float: none;
 }
-/* line 254, style/section/_opinions.scss */
+/* line 255, style/section/_opinions.scss */
 #infograph_application section#opinions .author .readmore {
   background: #f96b61;
   background: rgba(249, 107, 97, 0.75);
@@ -3680,25 +3683,25 @@ i[class*=" icon-"] {
   bottom: 50%;
   left: 50%;
 }
-/* line 265, style/section/_opinions.scss */
+/* line 266, style/section/_opinions.scss */
 #infograph_application section#opinions .author .readmore span {
   position: relative;
   top: 25px;
 }
-/* line 270, style/section/_opinions.scss */
+/* line 271, style/section/_opinions.scss */
 #infograph_application section#opinions .author .readmore:hover {
   color: #fff;
 }
-/* line 277, style/section/_opinions.scss */
+/* line 278, style/section/_opinions.scss */
 #infograph_application section#opinions .opinion-meta {
   margin-top: 1em;
   height: 42px;
 }
-/* line 281, style/section/_opinions.scss */
+/* line 282, style/section/_opinions.scss */
 #infograph_application section#opinions .opinion-meta h3, #infograph_application section#opinions .opinion-meta h4 {
   text-align: center;
 }
-/* line 285, style/section/_opinions.scss */
+/* line 286, style/section/_opinions.scss */
 #infograph_application section#opinions .opinion-meta h3 {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -3706,14 +3709,14 @@ i[class*=" icon-"] {
   font-size: 20px;
   font-size: 23px;
 }
-/* line 289, style/section/_opinions.scss */
+/* line 290, style/section/_opinions.scss */
 #infograph_application section#opinions .opinion-meta h4 {
-  font-family: "merriweather", sans-serif;
+  font-family: "helvetica", sans-serif;
   font-size: 12px;
   font-style: italic;
   text-transform: capitalize;
 }
-/* line 296, style/section/_opinions.scss */
+/* line 297, style/section/_opinions.scss */
 #infograph_application section#opinions .authorphoto {
   background: #062a3c;
   -webkit-border-radius: 50%;
@@ -3724,7 +3727,7 @@ i[class*=" icon-"] {
   -o-transition: all .6s ease-in-out;
   transition: all .6s ease-in-out;
 }
-/* line 306, style/section/_opinions.scss */
+/* line 307, style/section/_opinions.scss */
 #infograph_application section#opinions .authorphoto img {
   opacity: .5;
   -webkit-border-radius: 50%;
@@ -3735,16 +3738,16 @@ i[class*=" icon-"] {
   -o-transition: opacity .6s ease-in-out;
   transition: opacity .6s ease-in-out;
 }
-/* line 320, style/section/_opinions.scss */
+/* line 321, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces {
   display: block;
   margin: 25px 0 0;
 }
-/* line 324, style/section/_opinions.scss */
+/* line 325, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces p {
   color: white;
 }
-/* line 329, style/section/_opinions.scss */
+/* line 330, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces article {
   opacity: 1;
   -webkit-transition: opacity 1.5s ease;
@@ -3759,27 +3762,29 @@ i[class*=" icon-"] {
   transition: height 2s ease;
   width: 100%;
 }
-/* line 343, style/section/_opinions.scss */
+/* line 344, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces.closed article {
   opacity: 0;
 }
-/* line 347, style/section/_opinions.scss */
+/* line 348, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .bio {
-  display: block;
+  display: inline-block;
+  clear: both;
   width: 100%;
   background: #0B242F;
+  font-family: "Helvetica", sans-serif;
 }
-/* line 353, style/section/_opinions.scss */
+/* line 356, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-stage-outer {
   overflow: hidden;
 }
-/* line 357, style/section/_opinions.scss */
+/* line 360, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item {
   padding: 0 1%;
   position: relative;
   margin: auto;
 }
-/* line 364, style/section/_opinions.scss */
+/* line 367, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article {
   margin: auto;
   width: 90%;
@@ -3787,7 +3792,7 @@ i[class*=" icon-"] {
   background: #21a5b9;
   border-radius: 10px 10px;
 }
-/* line 371, style/section/_opinions.scss */
+/* line 374, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article h2 {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -3800,32 +3805,33 @@ i[class*=" icon-"] {
   line-height: 1em;
 }
 @media screen and (max-width: 770px) {
-  /* line 371, style/section/_opinions.scss */
+  /* line 374, style/section/_opinions.scss */
   #infograph_application section#opinions #opinionpieces .owl-item article h2 {
     padding: 70px 30px 0;
   }
 }
-/* line 384, style/section/_opinions.scss */
+/* line 387, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article > p {
   padding: 0 70px 10px 70px;
 }
-/* line 386, style/section/_opinions.scss */
+/* line 389, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article > p:last-child {
   padding-bottom: 70px;
 }
 @media screen and (max-width: 770px) {
-  /* line 384, style/section/_opinions.scss */
+  /* line 387, style/section/_opinions.scss */
   #infograph_application section#opinions #opinionpieces .owl-item article > p {
     padding: 0 30px;
   }
 }
-/* line 394, style/section/_opinions.scss */
+/* line 397, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio {
   margin-top: 70px;
   padding: 45px 100px;
   border-radius: 0 0 10px 10px;
+  display: inline-block;
 }
-/* line 398, style/section/_opinions.scss */
+/* line 402, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .authorphoto {
   display: inline-block;
   width: 160px;
@@ -3837,11 +3843,11 @@ i[class*=" icon-"] {
   position: relative;
   overflow: hidden;
 }
-/* line 408, style/section/_opinions.scss */
+/* line 412, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .authorphoto img {
   opacity: 1;
 }
-/* line 409, style/section/_opinions.scss */
+/* line 413, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .authorphoto::after {
   content: "";
   display: block;
@@ -3855,14 +3861,14 @@ i[class*=" icon-"] {
   background-size: contain;
   z-index: -1;
 }
-/* line 423, style/section/_opinions.scss */
+/* line 427, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail {
   vertical-align: top;
   display: inline-block;
   width: 70%;
   padding: 0 1em;
 }
-/* line 428, style/section/_opinions.scss */
+/* line 432, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail h3 {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -3871,71 +3877,70 @@ i[class*=" icon-"] {
   margin-bottom: .5em;
   font-size: 35px;
 }
-/* line 435, style/section/_opinions.scss */
+/* line 439, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links {
   margin-top: 1em;
 }
-/* line 437, style/section/_opinions.scss */
+/* line 441, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li {
   display: inline-block;
-  width: 32%;
   font-family: "bebas-neue";
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 25px;
 }
-/* line 442, style/section/_opinions.scss */
+/* line 446, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li::before {
   display: inline-block;
   margin-right: .5em;
   font-family: "FontAwesome";
 }
-/* line 447, style/section/_opinions.scss */
+/* line 451, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li a {
   text-decoration: none;
 }
-/* line 449, style/section/_opinions.scss */
+/* line 453, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.facebook::before {
   content: "";
 }
-/* line 450, style/section/_opinions.scss */
+/* line 454, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.facebook a {
   color: #163e52;
 }
-/* line 453, style/section/_opinions.scss */
+/* line 457, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.twitter::before {
   content: "";
   color: #3596c9;
 }
-/* line 454, style/section/_opinions.scss */
+/* line 458, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.twitter a {
   color: #3596c9;
 }
-/* line 457, style/section/_opinions.scss */
+/* line 461, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.share::before {
   content: "";
 }
-/* line 458, style/section/_opinions.scss */
+/* line 462, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .links li.share a {
   color: #f96b61;
 }
-/* line 462, style/section/_opinions.scss */
+/* line 466, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .pager {
   display: block;
   position: absolute;
   width: 15px;
   height: 30px;
 }
-/* line 467, style/section/_opinions.scss */
+/* line 471, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .pager::before {
   font-family: "FontAwesome";
   display: block;
 }
-/* line 471, style/section/_opinions.scss */
+/* line 475, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .pager.next::before {
   content: "";
 }
-/* line 472, style/section/_opinions.scss */
+/* line 476, style/section/_opinions.scss */
 #infograph_application section#opinions #opinionpieces .owl-item article .bio .detail .pager.prev::before {
   content: "";
 }
@@ -3961,7 +3966,7 @@ i[class*=" icon-"] {
 }
 /* line 22, style/section/_footer.scss */
 #infograph_application footer .container > span {
-  font-family: "merriweather", sans-serif;
+  font-family: "helvetica", sans-serif;
   font-size: 12px;
   font-style: italic;
   color: white;
@@ -3969,7 +3974,7 @@ i[class*=" icon-"] {
 }
 /* line 29, style/section/_footer.scss */
 #infograph_application footer .contact-copyright {
-  font-family: "merriweather", sans-serif;
+  font-family: "helvetica", sans-serif;
   font-size: 12px;
   font-family: "Helvetica", sans-serif;
 }
@@ -3977,7 +3982,7 @@ i[class*=" icon-"] {
 #infograph_application footer .contact {
   color: #00dce7;
   text-decoration: none;
-  font-family: "merriweather", sans-serif;
+  font-family: "helvetica", sans-serif;
   font-size: 12px;
   font-family: "Helvetica", sans-serif;
 }
@@ -3991,7 +3996,7 @@ i[class*=" icon-"] {
 /* line 45, style/section/_footer.scss */
 #infograph_application footer .copyright {
   color: #49677c;
-  font-family: "merriweather", sans-serif;
+  font-family: "helvetica", sans-serif;
   font-size: 12px;
   font-family: "Helvetica", sans-serif;
 }
@@ -4087,11 +4092,7 @@ i[class*=" icon-"] {
   color: white;
 }
 @media screen and (max-width: 770px) {
-  /* line 125, style/section/_footer.scss */
-  #infograph_application footer section#opinions h5 {
-    max-width: 100%;
-  }
-  /* line 128, style/section/_footer.scss */
+  /* line 126, style/section/_footer.scss */
   #infograph_application footer #mc_embed_signup .mc-field-group {
     width: 100%;
     margin-bottom: 10px;
