@@ -3353,18 +3353,21 @@ i[class*=" icon-"] {
 /* line 339, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended .source {
   font-style: italic;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
 }
-/* line 345, style/section/_post-content.scss */
+/* line 348, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended:hover .date {
   background: #f96b61;
   border-color: #f96b61;
   color: white;
 }
-/* line 350, style/section/_post-content.scss */
+/* line 353, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .recommended:hover .post-title {
   color: #f96b61;
 }
-/* line 359, style/section/_post-content.scss */
+/* line 362, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles .post-title {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -3373,36 +3376,36 @@ i[class*=" icon-"] {
   margin-bottom: .25em;
   transition: .25s all ease-in-out;
 }
-/* line 365, style/section/_post-content.scss */
+/* line 368, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles p {
   font-family: "helvetica", sans-serif;
   font-size: 12px;
   transition: all .25s linear;
 }
-/* line 370, style/section/_post-content.scss */
+/* line 373, style/section/_post-content.scss */
 #infograph_application #article #recommended-articles img {
   display: inline-block;
   vertical-align: top;
 }
-/* line 376, style/section/_post-content.scss */
+/* line 379, style/section/_post-content.scss */
 #infograph_application #article .addthis_sharing_toolbox {
   margin: 1em 0;
 }
-/* line 378, style/section/_post-content.scss */
+/* line 381, style/section/_post-content.scss */
 #infograph_application #article .addthis_sharing_toolbox .at-share-btn {
   margin-right: .75em;
 }
-/* line 383, style/section/_post-content.scss */
+/* line 386, style/section/_post-content.scss */
 #infograph_application #article .sources {
   margin-top: 1em;
   padding: 0;
   font-family: "Helvetica", sans-serif;
 }
-/* line 387, style/section/_post-content.scss */
+/* line 390, style/section/_post-content.scss */
 #infograph_application #article .sources * {
   color: #708d99;
 }
-/* line 389, style/section/_post-content.scss */
+/* line 392, style/section/_post-content.scss */
 #infograph_application #article .sources h4 {
   font-family: "bebas-neue";
   font-weight: 400;
@@ -3411,11 +3414,11 @@ i[class*=" icon-"] {
   font-size: 30px;
   margin-bottom: 20px;
 }
-/* line 395, style/section/_post-content.scss */
+/* line 398, style/section/_post-content.scss */
 #infograph_application #article .sources a {
   color: #21a5b9;
 }
-/* line 399, style/section/_post-content.scss */
+/* line 402, style/section/_post-content.scss */
 #infograph_application #article .sources li {
   margin-bottom: 5px;
 }
